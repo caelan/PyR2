@@ -53,18 +53,18 @@ def build_all():
     setup(
         name = "gjk2",
         ext_modules=[
-        Extension("geometry.gjk2",
-                  sources=["./geometry/gjk2.pyx", "./geometry/gjk/gjkHPN.c"],
+        Extension("PyR2.gjk2",
+                  sources=["./PyR2/gjk2.pyx", "./PyR2/gjk/gjkHPN.c"],
                   include_dirs = ['.', numpy.get_include()],
                   language="c")],
         cmdclass={"build_ext": build_ext})
     setup(
         name = "ik2",
         ext_modules=[
-        Extension("geometry.pr2.ik2",
-                  sources=["./geometry/pr2/pr2InvKin2.pyx",
-                           "./geometry/pr2/IK/ikfastApr18Left.cpp",
-                           "./geometry/pr2/IK/ikfastApr18Right.cpp"],
+        Extension("PyR2.pr2.ik2",
+                  sources=["./PyR2/pr2/pr2InvKin2.pyx",
+                           "./PyR2/pr2/IK/ikfastApr18Left.cpp",
+                           "./PyR2/pr2/IK/ikfastApr18Right.cpp"],
                   include_dirs = ['.', numpy.get_include()],
                   language="c++")],
         cmdclass={"build_ext": build_ext})

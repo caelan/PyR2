@@ -3,9 +3,9 @@ import itertools
 from random import uniform
 from collections import deque
 import numpy as np
-import geometry.hu as hu
-import geometry.shapes as shapes
-from geometry.transformations import quaternion_slerp
+import PyR2.hu as hu
+import PyR2.shapes as shapes
+from PyR2.transformations import quaternion_slerp
 from scipy.optimize import fmin_bfgs, fmin_slsqp
 
 Ident = hu.Transform(np.eye(4, dtype=np.float64)) # identity transform

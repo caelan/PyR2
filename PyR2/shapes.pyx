@@ -4,15 +4,15 @@ import numpy as np
 cimport numpy as np
 from cpython cimport bool
 
-cimport geometry.hu as hu
-import geometry.hu as hu
+cimport PyR2.hu as hu
+import PyR2.hu as hu
 
-from geometry.geom import vertsBBox, bboxCenter, bboxUnion, bboxOverlap, bboxGrownOverlap, bboxOrigin
-from geometry.cut import primPrimCut
+from PyR2.geom import vertsBBox, bboxCenter, bboxUnion, bboxOverlap, bboxGrownOverlap, bboxOrigin
+from PyR2.cut import primPrimCut
 
-cimport geometry.collision as collision
-import geometry.collision as collision
-from geometry.collision import primPrimCollides
+cimport PyR2.collision as collision
+import PyR2.collision as collision
+from PyR2.collision import primPrimCollides
 
 from scipy.spatial import ConvexHull
 

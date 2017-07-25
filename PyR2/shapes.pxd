@@ -1,8 +1,8 @@
 import math
 import numpy as np
 cimport numpy as np
-cimport geometry.hu as hu
-import geometry.hu as hu
+cimport PyR2.hu as hu
+import PyR2.hu as hu
 from cpython cimport bool
 
 cdef class Thing:

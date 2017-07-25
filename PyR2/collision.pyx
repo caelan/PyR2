@@ -2,8 +2,8 @@ import math
 import numpy as np
 cimport numpy as np
 from cpython cimport bool
-cimport geometry.shapes as shapes
-import geometry.gjk2 as gjk
+cimport PyR2.shapes as shapes
+import PyR2.gjk2 as gjk
 
 tiny = 1.0e-6
 cpdef bool primPrimCollides(shapes.Prim t1, shapes.Prim t2):

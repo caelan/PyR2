@@ -1531,7 +1531,7 @@ static const char __pyx_k_armInvKin2[] = "armInvKin2";
 static const char __pyx_k_gripperTip[] = "gripperTip";
 static const char __pyx_k_pr2LeftArm[] = "pr2LeftArm";
 static const char __pyx_k_ImportError[] = "ImportError";
-static const char __pyx_k_geometry_hu[] = "geometry.hu";
+static const char __pyx_k_geometry_hu[] = "PyR2.hu";
 static const char __pyx_k_pr2RightArm[] = "pr2RightArm";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_chainsByName[] = "chainsByName";
@@ -1543,7 +1543,7 @@ static const char __pyx_k_rotation_matrix[] = "rotation_matrix";
 static const char __pyx_k_ascontiguousarray[] = "ascontiguousarray";
 static const char __pyx_k_clearInvKinCache2[] = "clearInvKinCache2";
 static const char __pyx_k_gripperToolOffset[] = "gripperToolOffset";
-static const char __pyx_k_geometry_transformations[] = "geometry.transformations";
+static const char __pyx_k_geometry_transformations[] = "PyR2.transformations";
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
 static const char __pyx_k_Users_caelan_Programs_LIS_git_P[] = "/Users/caelan/Programs/LIS/git/PyR2/robot/pr2/pr2InvKin2.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
@@ -6409,7 +6409,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
   #endif
 
   /* "robot/pr2/pr2InvKin2.pyx":1
- * import geometry.hu as hu             # <<<<<<<<<<<<<<
+ * import PyR2.hu as hu             # <<<<<<<<<<<<<<
  * import math
  * import numpy
  */
@@ -6425,7 +6425,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "robot/pr2/pr2InvKin2.pyx":2
- * import geometry.hu as hu
+ * import PyR2.hu as hu
  * import math             # <<<<<<<<<<<<<<
  * import numpy
  * cimport numpy
@@ -6436,7 +6436,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "robot/pr2/pr2InvKin2.pyx":3
- * import geometry.hu as hu
+ * import PyR2.hu as hu
  * import math
  * import numpy             # <<<<<<<<<<<<<<
  * cimport numpy
@@ -6452,7 +6452,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
  * cimport ik2
  * import ik2             # <<<<<<<<<<<<<<
  * 
- * from geometry.transformations import rotation_matrix
+ * from PyR2.transformations import rotation_matrix
  */
   __pyx_t_2 = __Pyx_Import(__pyx_n_s_ik2, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6462,7 +6462,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
   /* "robot/pr2/pr2InvKin2.pyx":9
  * import ik2
  * 
- * from geometry.transformations import rotation_matrix             # <<<<<<<<<<<<<<
+ * from PyR2.transformations import rotation_matrix             # <<<<<<<<<<<<<<
  * 
  * # The nominal tool offset in ikFast
  */
@@ -6993,7 +6993,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
   __pyx_t_1 = 0;
 
   /* "robot/pr2/pr2InvKin2.pyx":1
- * import geometry.hu as hu             # <<<<<<<<<<<<<<
+ * import PyR2.hu as hu             # <<<<<<<<<<<<<<
  * import math
  * import numpy
  */

@@ -1,5 +1,5 @@
-from geometry import hu
-from geometry.shapes import BoxAligned, Shape
+from PyR2 import hu
+from PyR2.shapes import BoxAligned, Shape
 
 from itertools import count
 import math

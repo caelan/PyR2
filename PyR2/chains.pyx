@@ -1,6 +1,6 @@
-cimport geometry.hu as hu
-import geometry.hu as hu
-import geometry.transformations as transf
+cimport PyR2.hu as hu
+import PyR2.hu as hu
+import PyR2.transformations as transf
 import copy
 import math
 import random
@@ -10,10 +10,10 @@ from cpython cimport bool
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
 
-from geometry.hu cimport Transform, angleDiff, fixAnglePlusMinusPi
-from geometry.shapes cimport Shape
-from geometry.geom import bboxUnion, bboxOrigin, vertsBBox
-from geometry.gjk2 import confViolationsOS, OS_Array, printOSa
+from PyR2.hu cimport Transform, angleDiff, fixAnglePlusMinusPi
+from PyR2.shapes cimport Shape
+from PyR2.geom import bboxUnion, bboxOrigin, vertsBBox
+from PyR2.gjk2 import confViolationsOS, OS_Array, printOSa
 
 cdef double PI2 = 2*math.pi
 cdef Transform Ident = Transform(np.eye(4))

@@ -1,5 +1,5 @@
 import math
-import geometry.hu as hu
+import PyR2.hu as hu
 import numpy as np
 
 # If equiv is true, don't map two objects that should be different

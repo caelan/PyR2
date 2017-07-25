@@ -1,15 +1,15 @@
 import transformations as transf
-import geometry.hu as hu
-cimport geometry.hu as hu
+import PyR2.hu as hu
+cimport PyR2.hu as hu
 import math
 import random
 import numpy as np
 cimport numpy as np
 import xml.etree.ElementTree as ET
-import geometry.shapes as shapes
+import PyR2.shapes as shapes
 from cpython cimport bool
-from geometry.hu cimport Transform
-from geometry.hu import Transform
+from PyR2.hu cimport Transform
+from PyR2.hu import Transform
 
 cpdef linkVerts(link, rel=*, prdebug=*)
 

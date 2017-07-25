@@ -1,9 +1,9 @@
 import numpy as np
 cimport numpy as np
 from cpython cimport bool
-cimport geometry.shapes as shapes
-import geometry.shapes as shapes
-cimport geometry.hu as hu
+cimport PyR2.shapes as shapes
+import PyR2.shapes as shapes
+cimport PyR2.hu as hu
 
 #################################################################################
 # BBox operations -- uses Numpy arrays

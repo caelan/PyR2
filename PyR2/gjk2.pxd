@@ -1,8 +1,8 @@
 import numpy as np
 cimport numpy as np
-cimport geometry.shapes as shapes
+cimport PyR2.shapes as shapes
 from cpython cimport bool
-from geometry.c_gjk cimport Object_structure
+from PyR2.c_gjk cimport Object_structure
 
 # The C structure for an object or link (note that this is fixed size)
 cdef struct OS:

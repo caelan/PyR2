@@ -4,8 +4,8 @@ cimport numpy as np
 import random
 import operator
 from cpython cimport bool
-import geometry.transf as transf
-cimport geometry.transf as transf
+import PyR2.transf as transf
+cimport PyR2.transf as transf
 
 # Poses are 4D (x, y, z, th)
 

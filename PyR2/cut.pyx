@@ -1,9 +1,9 @@
 import numpy as np
 cimport numpy as np
 from cpython cimport bool
-import geometry.shapes as shapes
-import geometry.hu as hu
-import geometry.geom as geom
+import PyR2.shapes as shapes
+import PyR2.hu as hu
+import PyR2.geom as geom
 
 Ident = hu.Transform(np.eye(4))
 

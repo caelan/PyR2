@@ -2,8 +2,8 @@ import time
 import numpy as np
 cimport numpy as np
 from cpython cimport bool
-import geometry.DrawingWindowStandalonePIL as dw
-import geometry.hu as hu
+import PyR2.DrawingWindowStandalonePIL as dw
+import PyR2.hu as hu
 
 cdef class Window3D:
     def __init__(self, viewport = None, str title = 'View', int windowWidth = 500, noWindow = False):

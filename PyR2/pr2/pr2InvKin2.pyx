@@ -1,4 +1,4 @@
-import geometry.hu as hu
+import PyR2.hu as hu
 import math
 import numpy
 cimport numpy
@@ -6,7 +6,7 @@ cimport numpy
 cimport ik2
 import ik2
 
-from geometry.transformations import rotation_matrix
+from PyR2.transformations import rotation_matrix
 
 # The nominal tool offset in ikFast
 gripperTip = hu.Pose(0.18,0.0,0.0,0.0)

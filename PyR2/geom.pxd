@@ -1,7 +1,7 @@
 import numpy as np
 cimport numpy as np
 from cpython cimport bool
-cimport geometry.hu as hu
+cimport PyR2.hu as hu
 
 # BBoxes
 

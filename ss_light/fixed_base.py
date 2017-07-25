@@ -2,7 +2,7 @@
 
 from time import sleep
 
-from geometry.graphics3D import Window3D
+from PyR2.graphics3D import Window3D
 from stripstream.algorithms.incremental.incremental_planner import incremental_planner
 from stripstream.algorithms.search.fast_downward import get_fast_downward
 from stripstream.pddl.utils import convert_plan

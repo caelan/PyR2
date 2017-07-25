@@ -7,15 +7,15 @@ from cython cimport boundscheck, wraparound
 
 from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
 
-cimport geometry.chains as chains
-cimport geometry.shapes as shapes
-cimport geometry.c_gjk as c_gjk
-from geometry.c_gjk cimport Object_structure, gjk_distance
+cimport PyR2.chains as chains
+cimport PyR2.shapes as shapes
+cimport PyR2.c_gjk as c_gjk
+from PyR2.c_gjk cimport Object_structure, gjk_distance
 cimport gjk2
 import gjk2
 
-from geometry.hu cimport Violations
-import geometry.transformations as transf
+from PyR2.hu cimport Violations
+import PyR2.transformations as transf
 
 # from libc.math cimport sin, cos, sqrt
 cdef extern from "math.h":

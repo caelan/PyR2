@@ -3,18 +3,7 @@ import numpy as np
 cimport numpy as np
 from cpython cimport bool
 import graphics.DrawingWindowStandalonePIL as dw
-import graphics.colorNames as colorNames
 import geometry.hu as hu
-
-use3D = False
-
-if use3D:
-    import visual
-    reload(visual)
-
-#################################
-# Windows
-#################################
 
 cdef class Window3D:
     def __init__(self, viewport = None, str title = 'View', int windowWidth = 500, noWindow = False):
@@ -119,63 +108,3 @@ cdef class Window3D:
     cpdef update(self):
         if self.window is None: return
         self.window.canvas.update()
-
-
-cdef class VisualWindow:
-    colors = colorNames.colors
-    def __init__(self, title = "Robot Simulation",
-                 windowDims = (600, 600)):
-        self.window = visual.display()
-        self.disp = {}
-        self.window.width = windowDims[0]
-        self.window.height = windowDims[1]
-        self.window.up = (0, 0, 1)
-        self.window.forward = (0, -1, 0)
-        self.window.title = title
-        self.window.visible = True
-
-    def color(self, c):
-        if isinstance(c, str):
-            if c[0] == '#':
-                return map(float.fromhex, [c[1:3], c[3:5], c[5:7]])
-            else:
-                return [x/256.0 for x in self.colors[c]]
-        elif isinstance(c, (tuple, list)):
-            return [x/256.0 for x in c]
-        elif c is None:
-            return [x/256.0 for x in self.colors['white']]
-        else:
-            return c
-
-    def clear(self):
-        for (name, b) in self.disp.items():
-            self.disp[name].visible = False
-            del self.disp[name]
-
-    def pause(self):
-        print 'Pausing window'
-
-    def playback(self, capture = None, delay = 1):
-        for entry in capture:
-            if entry[0] == 'clear':
-                self.clear()
-                time.sleep(delay)
-            elif entry[0] == 'pause':
-                time.sleep(delay)
-            else:
-                self.draw(entry[0], color=entry[1], opacity=entry[2])
-                self.update()
-
-    def update(self):
-        pass
-
-    cpdef draw (self, prim, str color = None, float opacity = 1.0):
-        self.window.select()
-        name = prim.properties['name']
-        if name in self.disp:
-            b = self.disp[name]
-            b.visible = False
-            del self.disp[name]
-            del b
-        c = self.color(color)
-        self.disp[name] = visual.convex(pos = prim.vertices().tolist(), color = c)

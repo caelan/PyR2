@@ -7,7 +7,6 @@ import numpy as np
 cimport numpy as np
 import xml.etree.ElementTree as ET
 import geometry.shapes as shapes
-import graphics.windowManager3D as win
 from cpython cimport bool
 from geometry.hu cimport Transform
 from geometry.hu import Transform

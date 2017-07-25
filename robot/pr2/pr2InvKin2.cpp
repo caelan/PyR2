@@ -1531,14 +1531,12 @@ static const char __pyx_k_armInvKin2[] = "armInvKin2";
 static const char __pyx_k_gripperTip[] = "gripperTip";
 static const char __pyx_k_pr2LeftArm[] = "pr2LeftArm";
 static const char __pyx_k_ImportError[] = "ImportError";
-static const char __pyx_k_autil_utils[] = "autil.utils";
 static const char __pyx_k_geometry_hu[] = "geometry.hu";
 static const char __pyx_k_pr2RightArm[] = "pr2RightArm";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_chainsByName[] = "chainsByName";
 static const char __pyx_k_invKinStats2[] = "invKinStats2";
 static const char __pyx_k_newArmAngles[] = "newArmAngles";
-static const char __pyx_k_prettyString[] = "prettyString";
 static const char __pyx_k_robot_pr2_ik2[] = "robot.pr2.ik2";
 static const char __pyx_k_newHandPoseRel[] = "newHandPoseRel";
 static const char __pyx_k_rotation_matrix[] = "rotation_matrix";
@@ -1547,7 +1545,7 @@ static const char __pyx_k_clearInvKinCache2[] = "clearInvKinCache2";
 static const char __pyx_k_gripperToolOffset[] = "gripperToolOffset";
 static const char __pyx_k_geometry_transformations[] = "geometry.transformations";
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
-static const char __pyx_k_Users_caelan_Programs_LIS_git_a[] = "/Users/caelan/Programs/LIS/git/amber/robot/pr2/pr2InvKin2.pyx";
+static const char __pyx_k_Users_caelan_Programs_LIS_git_P[] = "/Users/caelan/Programs/LIS/git/PyR2/robot/pr2/pr2InvKin2.pyx";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Format_string_allocated_too_shor[] = "Format string allocated too short, see comment in numpy.pxd";
@@ -1562,14 +1560,13 @@ static PyObject *__pyx_n_s_ImportError;
 static PyObject *__pyx_kp_u_Non_native_byte_order_not_suppor;
 static PyObject *__pyx_n_s_Pose;
 static PyObject *__pyx_n_s_RuntimeError;
-static PyObject *__pyx_kp_s_Users_caelan_Programs_LIS_git_a;
+static PyObject *__pyx_kp_s_Users_caelan_Programs_LIS_git_P;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s__10;
 static PyObject *__pyx_n_s_arm;
 static PyObject *__pyx_n_s_armInvKin2;
 static PyObject *__pyx_n_s_armName;
 static PyObject *__pyx_n_s_ascontiguousarray;
-static PyObject *__pyx_n_s_autil_utils;
 static PyObject *__pyx_n_s_chains;
 static PyObject *__pyx_n_s_chainsByName;
 static PyObject *__pyx_n_s_clearInvKinCache2;
@@ -1609,7 +1606,6 @@ static PyObject *__pyx_kp_s_numpy_core_umath_failed_to_impor;
 static PyObject *__pyx_n_s_pi;
 static PyObject *__pyx_n_s_pr2LeftArm;
 static PyObject *__pyx_n_s_pr2RightArm;
-static PyObject *__pyx_n_s_prettyString;
 static PyObject *__pyx_n_s_r;
 static PyObject *__pyx_n_s_range;
 static PyObject *__pyx_n_s_reduce;
@@ -1657,7 +1653,7 @@ static PyObject *__pyx_tuple__19;
 static PyObject *__pyx_codeobj__13;
 static PyObject *__pyx_codeobj__15;
 
-/* "robot/pr2/pr2InvKin2.pyx":18
+/* "robot/pr2/pr2InvKin2.pyx":17
  * 
  * cdef dict cache = {}
  * def clearInvKinCache2():             # <<<<<<<<<<<<<<
@@ -1685,7 +1681,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_clearInvKinCache2(CYTHON_UNUSED PyObj
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("clearInvKinCache2", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":19
+  /* "robot/pr2/pr2InvKin2.pyx":18
  * cdef dict cache = {}
  * def clearInvKinCache2():
  *     cache.clear()             # <<<<<<<<<<<<<<
@@ -1694,11 +1690,11 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_clearInvKinCache2(CYTHON_UNUSED PyObj
  */
   if (unlikely(__pyx_v_5robot_3pr2_3ik2_cache == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%s'", "clear");
-    __PYX_ERR(0, 19, __pyx_L1_error)
+    __PYX_ERR(0, 18, __pyx_L1_error)
   }
-  __pyx_t_1 = __Pyx_PyDict_Clear(__pyx_v_5robot_3pr2_3ik2_cache); if (unlikely(__pyx_t_1 == -1)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_Clear(__pyx_v_5robot_3pr2_3ik2_cache); if (unlikely(__pyx_t_1 == -1)) __PYX_ERR(0, 18, __pyx_L1_error)
 
-  /* "robot/pr2/pr2InvKin2.pyx":18
+  /* "robot/pr2/pr2InvKin2.pyx":17
  * 
  * cdef dict cache = {}
  * def clearInvKinCache2():             # <<<<<<<<<<<<<<
@@ -1718,7 +1714,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_clearInvKinCache2(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "robot/pr2/pr2InvKin2.pyx":24
+/* "robot/pr2/pr2InvKin2.pyx":23
  * cdef double IK_FAST_STEP = 0.1
  * 
  * def armInvKin2(chains, arm, torso, target, conf,             # <<<<<<<<<<<<<<
@@ -1743,7 +1739,7 @@ static PyObject *__pyx_pw_5robot_3pr2_3ik2_3armInvKin2(PyObject *__pyx_self, PyO
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_chains,&__pyx_n_s_arm,&__pyx_n_s_torso,&__pyx_n_s_target,&__pyx_n_s_conf,&__pyx_n_s_returnAll,0};
     PyObject* values[6] = {0,0,0,0,0,0};
 
-    /* "robot/pr2/pr2InvKin2.pyx":25
+    /* "robot/pr2/pr2InvKin2.pyx":24
  * 
  * def armInvKin2(chains, arm, torso, target, conf,
  *               returnAll = False):             # <<<<<<<<<<<<<<
@@ -1772,22 +1768,22 @@ static PyObject *__pyx_pw_5robot_3pr2_3ik2_3armInvKin2(PyObject *__pyx_self, PyO
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_arm)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 1); __PYX_ERR(0, 24, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 1); __PYX_ERR(0, 23, __pyx_L3_error)
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_torso)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 2); __PYX_ERR(0, 24, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 2); __PYX_ERR(0, 23, __pyx_L3_error)
         }
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_target)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 3); __PYX_ERR(0, 24, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 3); __PYX_ERR(0, 23, __pyx_L3_error)
         }
         case  4:
         if (likely((values[4] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_conf)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 4); __PYX_ERR(0, 24, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, 4); __PYX_ERR(0, 23, __pyx_L3_error)
         }
         case  5:
         if (kw_args > 0) {
@@ -1796,7 +1792,7 @@ static PyObject *__pyx_pw_5robot_3pr2_3ik2_3armInvKin2(PyObject *__pyx_self, PyO
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "armInvKin2") < 0)) __PYX_ERR(0, 24, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "armInvKin2") < 0)) __PYX_ERR(0, 23, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1819,7 +1815,7 @@ static PyObject *__pyx_pw_5robot_3pr2_3ik2_3armInvKin2(PyObject *__pyx_self, PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 24, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("armInvKin2", 0, 5, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 23, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("robot.pr2.ik2.armInvKin2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1827,7 +1823,7 @@ static PyObject *__pyx_pw_5robot_3pr2_3ik2_3armInvKin2(PyObject *__pyx_self, PyO
   __pyx_L4_argument_unpacking_done:;
   __pyx_r = __pyx_pf_5robot_3pr2_3ik2_2armInvKin2(__pyx_self, __pyx_v_chains, __pyx_v_arm, __pyx_v_torso, __pyx_v_target, __pyx_v_conf, __pyx_v_returnAll);
 
-  /* "robot/pr2/pr2InvKin2.pyx":24
+  /* "robot/pr2/pr2InvKin2.pyx":23
  * cdef double IK_FAST_STEP = 0.1
  * 
  * def armInvKin2(chains, arm, torso, target, conf,             # <<<<<<<<<<<<<<
@@ -1859,7 +1855,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   int __pyx_t_8;
   __Pyx_RefNannySetupContext("armInvKin2", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":26
+  /* "robot/pr2/pr2InvKin2.pyx":25
  * def armInvKin2(chains, arm, torso, target, conf,
  *               returnAll = False):
  *     name = 'ArmInvKin'             # <<<<<<<<<<<<<<
@@ -1869,7 +1865,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(__pyx_n_s_ArmInvKin);
   __pyx_v_name = __pyx_n_s_ArmInvKin;
 
-  /* "robot/pr2/pr2InvKin2.pyx":28
+  /* "robot/pr2/pr2InvKin2.pyx":27
  *     name = 'ArmInvKin'
  * 
  *     assert not returnAll                # Just for one solution !!             # <<<<<<<<<<<<<<
@@ -1878,27 +1874,27 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
-    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_returnAll); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 28, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_returnAll); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 27, __pyx_L1_error)
     if (unlikely(!((!__pyx_t_1) != 0))) {
       PyErr_SetNone(PyExc_AssertionError);
-      __PYX_ERR(0, 28, __pyx_L1_error)
+      __PYX_ERR(0, 27, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "robot/pr2/pr2InvKin2.pyx":31
+  /* "robot/pr2/pr2InvKin2.pyx":30
  * 
  *     # The tool pose relative to the torso frame
  *     newHandPoseRel = reduce(numpy.dot, [torso.inverse().matrix,             # <<<<<<<<<<<<<<
  *                                         target.matrix,
  *                                         gripperToolOffset])
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_torso, __pyx_n_s_inverse); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_torso, __pyx_n_s_inverse); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -1911,45 +1907,45 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
     }
   }
   if (__pyx_t_5) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   } else {
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_matrix); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_matrix); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":32
+  /* "robot/pr2/pr2InvKin2.pyx":31
  *     # The tool pose relative to the torso frame
  *     newHandPoseRel = reduce(numpy.dot, [torso.inverse().matrix,
  *                                         target.matrix,             # <<<<<<<<<<<<<<
  *                                         gripperToolOffset])
  *     invKinStats2[0] += 1
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_target, __pyx_n_s_matrix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_target, __pyx_n_s_matrix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "robot/pr2/pr2InvKin2.pyx":33
+  /* "robot/pr2/pr2InvKin2.pyx":32
  *     newHandPoseRel = reduce(numpy.dot, [torso.inverse().matrix,
  *                                         target.matrix,
  *                                         gripperToolOffset])             # <<<<<<<<<<<<<<
  *     invKinStats2[0] += 1
  *     newHandPoseRel.flags.writeable = False
  */
-  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_gripperToolOffset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_gripperToolOffset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
-  /* "robot/pr2/pr2InvKin2.pyx":31
+  /* "robot/pr2/pr2InvKin2.pyx":30
  * 
  *     # The tool pose relative to the torso frame
  *     newHandPoseRel = reduce(numpy.dot, [torso.inverse().matrix,             # <<<<<<<<<<<<<<
  *                                         target.matrix,
  *                                         gripperToolOffset])
  */
-  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_4);
   PyList_SET_ITEM(__pyx_t_6, 0, __pyx_t_4);
@@ -1960,7 +1956,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   __pyx_t_4 = 0;
   __pyx_t_2 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3);
@@ -1968,13 +1964,13 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_6);
   __pyx_t_3 = 0;
   __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reduce, __pyx_t_5, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_reduce, __pyx_t_5, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_newHandPoseRel = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":34
+  /* "robot/pr2/pr2InvKin2.pyx":33
  *                                         target.matrix,
  *                                         gripperToolOffset])
  *     invKinStats2[0] += 1             # <<<<<<<<<<<<<<
@@ -1982,40 +1978,40 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
  *     armName = 'pr2LeftArm' if arm=='l' else 'pr2RightArm'
  */
   __pyx_t_7 = 0;
-  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_6, __pyx_t_7, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_6, __pyx_t_7, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_t_5, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_t_5, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (unlikely(__Pyx_SetItemInt(__pyx_t_5, __pyx_t_7, __pyx_t_6, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1) < 0)) __PYX_ERR(0, 34, __pyx_L1_error)
+  if (unlikely(__Pyx_SetItemInt(__pyx_t_5, __pyx_t_7, __pyx_t_6, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1) < 0)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":35
+  /* "robot/pr2/pr2InvKin2.pyx":34
  *                                         gripperToolOffset])
  *     invKinStats2[0] += 1
  *     newHandPoseRel.flags.writeable = False             # <<<<<<<<<<<<<<
  *     armName = 'pr2LeftArm' if arm=='l' else 'pr2RightArm'
  *     current = conf[armName]
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_newHandPoseRel, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_newHandPoseRel, __pyx_n_s_flags); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_t_6, __pyx_n_s_writeable, Py_False) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_t_6, __pyx_n_s_writeable, Py_False) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":36
+  /* "robot/pr2/pr2InvKin2.pyx":35
  *     invKinStats2[0] += 1
  *     newHandPoseRel.flags.writeable = False
  *     armName = 'pr2LeftArm' if arm=='l' else 'pr2RightArm'             # <<<<<<<<<<<<<<
  *     current = conf[armName]
  *     key = (arm, newHandPoseRel.data, current[2])
  */
-  __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_l, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_l, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 35, __pyx_L1_error)
   if (__pyx_t_1) {
     __Pyx_INCREF(__pyx_n_s_pr2LeftArm);
     __pyx_t_6 = __pyx_n_s_pr2LeftArm;
@@ -2026,30 +2022,30 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   __pyx_v_armName = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":37
+  /* "robot/pr2/pr2InvKin2.pyx":36
  *     newHandPoseRel.flags.writeable = False
  *     armName = 'pr2LeftArm' if arm=='l' else 'pr2RightArm'
  *     current = conf[armName]             # <<<<<<<<<<<<<<
  *     key = (arm, newHandPoseRel.data, current[2])
  *     if cache.get(key, None) is not None:
  */
-  __pyx_t_6 = PyObject_GetItem(__pyx_v_conf, __pyx_v_armName); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_6 = PyObject_GetItem(__pyx_v_conf, __pyx_v_armName); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_v_current = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":38
+  /* "robot/pr2/pr2InvKin2.pyx":37
  *     armName = 'pr2LeftArm' if arm=='l' else 'pr2RightArm'
  *     current = conf[armName]
  *     key = (arm, newHandPoseRel.data, current[2])             # <<<<<<<<<<<<<<
  *     if cache.get(key, None) is not None:
  *         invKinStats2[1] += 1
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_newHandPoseRel, __pyx_n_s_data); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_newHandPoseRel, __pyx_n_s_data); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_current, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_current, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_arm);
   __Pyx_GIVEREF(__pyx_v_arm);
@@ -2063,7 +2059,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   __pyx_v_key = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":39
+  /* "robot/pr2/pr2InvKin2.pyx":38
  *     current = conf[armName]
  *     key = (arm, newHandPoseRel.data, current[2])
  *     if cache.get(key, None) is not None:             # <<<<<<<<<<<<<<
@@ -2072,16 +2068,16 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
  */
   if (unlikely(__pyx_v_5robot_3pr2_3ik2_cache == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%s'", "get");
-    __PYX_ERR(0, 39, __pyx_L1_error)
+    __PYX_ERR(0, 38, __pyx_L1_error)
   }
-  __pyx_t_3 = __Pyx_PyDict_GetItemDefault(__pyx_v_5robot_3pr2_3ik2_cache, __pyx_v_key, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_GetItemDefault(__pyx_v_5robot_3pr2_3ik2_cache, __pyx_v_key, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_1 = (__pyx_t_3 != Py_None);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_8 = (__pyx_t_1 != 0);
   if (__pyx_t_8) {
 
-    /* "robot/pr2/pr2InvKin2.pyx":40
+    /* "robot/pr2/pr2InvKin2.pyx":39
  *     key = (arm, newHandPoseRel.data, current[2])
  *     if cache.get(key, None) is not None:
  *         invKinStats2[1] += 1             # <<<<<<<<<<<<<<
@@ -2089,21 +2085,21 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
  *     newArmAngles = pr2KinIKfast(arm, newHandPoseRel, current,
  */
     __pyx_t_7 = 1;
-    __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_3, __pyx_t_7, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_3, __pyx_t_7, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_t_5, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_t_5, __pyx_int_1, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_invKinStats2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (unlikely(__Pyx_SetItemInt(__pyx_t_5, __pyx_t_7, __pyx_t_3, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1) < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(__pyx_t_5, __pyx_t_7, __pyx_t_3, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1) < 0)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":41
+    /* "robot/pr2/pr2InvKin2.pyx":40
  *     if cache.get(key, None) is not None:
  *         invKinStats2[1] += 1
  *         return cache[key]             # <<<<<<<<<<<<<<
@@ -2113,15 +2109,15 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_5robot_3pr2_3ik2_cache == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      __PYX_ERR(0, 41, __pyx_L1_error)
+      __PYX_ERR(0, 40, __pyx_L1_error)
     }
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_5robot_3pr2_3ik2_cache, __pyx_v_key); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_5robot_3pr2_3ik2_cache, __pyx_v_key); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":39
+    /* "robot/pr2/pr2InvKin2.pyx":38
  *     current = conf[armName]
  *     key = (arm, newHandPoseRel.data, current[2])
  *     if cache.get(key, None) is not None:             # <<<<<<<<<<<<<<
@@ -2130,33 +2126,33 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
  */
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":43
+  /* "robot/pr2/pr2InvKin2.pyx":42
  *         return cache[key]
  *     newArmAngles = pr2KinIKfast(arm, newHandPoseRel, current,
  *                                 chain=chains.chainsByName[armName])             # <<<<<<<<<<<<<<
  * 
  *     cache[key] = newArmAngles
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_chains, __pyx_n_s_chainsByName); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_chains, __pyx_n_s_chainsByName); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyObject_GetItem(__pyx_t_3, __pyx_v_armName); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_5 = PyObject_GetItem(__pyx_t_3, __pyx_v_armName); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":42
+  /* "robot/pr2/pr2InvKin2.pyx":41
  *         invKinStats2[1] += 1
  *         return cache[key]
  *     newArmAngles = pr2KinIKfast(arm, newHandPoseRel, current,             # <<<<<<<<<<<<<<
  *                                 chain=chains.chainsByName[armName])
  * 
  */
-  __pyx_t_3 = __pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(__pyx_v_arm, __pyx_v_newHandPoseRel, __pyx_v_current, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __pyx_t_3 = __pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(__pyx_v_arm, __pyx_v_newHandPoseRel, __pyx_v_current, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_newArmAngles = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":45
+  /* "robot/pr2/pr2InvKin2.pyx":44
  *                                 chain=chains.chainsByName[armName])
  * 
  *     cache[key] = newArmAngles             # <<<<<<<<<<<<<<
@@ -2165,11 +2161,11 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
  */
   if (unlikely(__pyx_v_5robot_3pr2_3ik2_cache == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    __PYX_ERR(0, 45, __pyx_L1_error)
+    __PYX_ERR(0, 44, __pyx_L1_error)
   }
-  if (unlikely(PyDict_SetItem(__pyx_v_5robot_3pr2_3ik2_cache, __pyx_v_key, __pyx_v_newArmAngles) < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (unlikely(PyDict_SetItem(__pyx_v_5robot_3pr2_3ik2_cache, __pyx_v_key, __pyx_v_newArmAngles) < 0)) __PYX_ERR(0, 44, __pyx_L1_error)
 
-  /* "robot/pr2/pr2InvKin2.pyx":46
+  /* "robot/pr2/pr2InvKin2.pyx":45
  * 
  *     cache[key] = newArmAngles
  *     return newArmAngles             # <<<<<<<<<<<<<<
@@ -2181,7 +2177,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   __pyx_r = __pyx_v_newArmAngles;
   goto __pyx_L0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":24
+  /* "robot/pr2/pr2InvKin2.pyx":23
  * cdef double IK_FAST_STEP = 0.1
  * 
  * def armInvKin2(chains, arm, torso, target, conf,             # <<<<<<<<<<<<<<
@@ -2210,7 +2206,7 @@ static PyObject *__pyx_pf_5robot_3pr2_3ik2_2armInvKin2(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-/* "robot/pr2/pr2InvKin2.pyx":56
+/* "robot/pr2/pr2InvKin2.pyx":55
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)
  * 
  * cdef inline double angleDiff(double x, double y):             # <<<<<<<<<<<<<<
@@ -2230,26 +2226,26 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_angleDiff(double __pyx_v_x,
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("angleDiff", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":58
+  /* "robot/pr2/pr2InvKin2.pyx":57
  * cdef inline double angleDiff(double x, double y):
  *     cdef:
  *         double twoPi = 2*math.pi             # <<<<<<<<<<<<<<
  *         double z = (x - y)%twoPi
  *     if z > math.pi:
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_pi); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_pi); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyNumber_Multiply(__pyx_int_2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(__pyx_int_2, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_3 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_3 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_3 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_3 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_twoPi = __pyx_t_3;
 
-  /* "robot/pr2/pr2InvKin2.pyx":59
+  /* "robot/pr2/pr2InvKin2.pyx":58
  *     cdef:
  *         double twoPi = 2*math.pi
  *         double z = (x - y)%twoPi             # <<<<<<<<<<<<<<
@@ -2259,32 +2255,32 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_angleDiff(double __pyx_v_x,
   __pyx_t_3 = (__pyx_v_x - __pyx_v_y);
   if (unlikely(__pyx_v_twoPi == 0)) {
     PyErr_SetString(PyExc_ZeroDivisionError, "float divmod()");
-    __PYX_ERR(0, 59, __pyx_L1_error)
+    __PYX_ERR(0, 58, __pyx_L1_error)
   }
   __pyx_v_z = __Pyx_mod_double(__pyx_t_3, __pyx_v_twoPi);
 
-  /* "robot/pr2/pr2InvKin2.pyx":60
+  /* "robot/pr2/pr2InvKin2.pyx":59
  *         double twoPi = 2*math.pi
  *         double z = (x - y)%twoPi
  *     if z > math.pi:             # <<<<<<<<<<<<<<
  *         return z - twoPi
  *     else:
  */
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_z); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_z); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_pi); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_pi); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_t_4, Py_GT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_t_4, Py_GT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_5) {
 
-    /* "robot/pr2/pr2InvKin2.pyx":61
+    /* "robot/pr2/pr2InvKin2.pyx":60
  *         double z = (x - y)%twoPi
  *     if z > math.pi:
  *         return z - twoPi             # <<<<<<<<<<<<<<
@@ -2294,7 +2290,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_angleDiff(double __pyx_v_x,
     __pyx_r = (__pyx_v_z - __pyx_v_twoPi);
     goto __pyx_L0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":60
+    /* "robot/pr2/pr2InvKin2.pyx":59
  *         double twoPi = 2*math.pi
  *         double z = (x - y)%twoPi
  *     if z > math.pi:             # <<<<<<<<<<<<<<
@@ -2303,7 +2299,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_angleDiff(double __pyx_v_x,
  */
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":63
+  /* "robot/pr2/pr2InvKin2.pyx":62
  *         return z - twoPi
  *     else:
  *         return z             # <<<<<<<<<<<<<<
@@ -2315,7 +2311,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_angleDiff(double __pyx_v_x,
     goto __pyx_L0;
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":56
+  /* "robot/pr2/pr2InvKin2.pyx":55
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)
  * 
  * cdef inline double angleDiff(double x, double y):             # <<<<<<<<<<<<<<
@@ -2335,7 +2331,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_angleDiff(double __pyx_v_x,
   return __pyx_r;
 }
 
-/* "robot/pr2/pr2InvKin2.pyx":65
+/* "robot/pr2/pr2InvKin2.pyx":64
  *         return z
  * 
  * cdef inline double solnDist(sol1, sol2):             # <<<<<<<<<<<<<<
@@ -2356,7 +2352,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
   int __pyx_t_5;
   __Pyx_RefNannySetupContext("solnDist", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":67
+  /* "robot/pr2/pr2InvKin2.pyx":66
  * cdef inline double solnDist(sol1, sol2):
  *     cdef:
  *         double maxDiff = 0.0             # <<<<<<<<<<<<<<
@@ -2365,7 +2361,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
  */
   __pyx_v_maxDiff = 0.0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":68
+  /* "robot/pr2/pr2InvKin2.pyx":67
  *     cdef:
  *         double maxDiff = 0.0
  *         double diff = 0.0             # <<<<<<<<<<<<<<
@@ -2374,7 +2370,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
  */
   __pyx_v_diff = 0.0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":70
+  /* "robot/pr2/pr2InvKin2.pyx":69
  *         double diff = 0.0
  *         int i
  *     for i in range(7):             # <<<<<<<<<<<<<<
@@ -2384,24 +2380,24 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
   for (__pyx_t_1 = 0; __pyx_t_1 < 7; __pyx_t_1+=1) {
     __pyx_v_i = __pyx_t_1;
 
-    /* "robot/pr2/pr2InvKin2.pyx":71
+    /* "robot/pr2/pr2InvKin2.pyx":70
  *         int i
  *     for i in range(7):
  *         diff = abs(angleDiff(sol1[i], sol2[i]))             # <<<<<<<<<<<<<<
  *         if diff > maxDiff:
  *             maxDiff = diff
  */
-    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_sol1, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_sol1, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_3 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_3 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_3 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_sol2, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_sol2, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_4 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_4 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_4 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_diff = fabs(__pyx_f_5robot_3pr2_3ik2_angleDiff(__pyx_t_3, __pyx_t_4));
 
-    /* "robot/pr2/pr2InvKin2.pyx":72
+    /* "robot/pr2/pr2InvKin2.pyx":71
  *     for i in range(7):
  *         diff = abs(angleDiff(sol1[i], sol2[i]))
  *         if diff > maxDiff:             # <<<<<<<<<<<<<<
@@ -2411,7 +2407,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
     __pyx_t_5 = ((__pyx_v_diff > __pyx_v_maxDiff) != 0);
     if (__pyx_t_5) {
 
-      /* "robot/pr2/pr2InvKin2.pyx":73
+      /* "robot/pr2/pr2InvKin2.pyx":72
  *         diff = abs(angleDiff(sol1[i], sol2[i]))
  *         if diff > maxDiff:
  *             maxDiff = diff             # <<<<<<<<<<<<<<
@@ -2420,7 +2416,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
  */
       __pyx_v_maxDiff = __pyx_v_diff;
 
-      /* "robot/pr2/pr2InvKin2.pyx":72
+      /* "robot/pr2/pr2InvKin2.pyx":71
  *     for i in range(7):
  *         diff = abs(angleDiff(sol1[i], sol2[i]))
  *         if diff > maxDiff:             # <<<<<<<<<<<<<<
@@ -2430,7 +2426,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
     }
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":74
+  /* "robot/pr2/pr2InvKin2.pyx":73
  *         if diff > maxDiff:
  *             maxDiff = diff
  *     return maxDiff             # <<<<<<<<<<<<<<
@@ -2440,7 +2436,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
   __pyx_r = __pyx_v_maxDiff;
   goto __pyx_L0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":65
+  /* "robot/pr2/pr2InvKin2.pyx":64
  *         return z
  * 
  * cdef inline double solnDist(sol1, sol2):             # <<<<<<<<<<<<<<
@@ -2458,7 +2454,7 @@ static CYTHON_INLINE double __pyx_f_5robot_3pr2_3ik2_solnDist(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "robot/pr2/pr2InvKin2.pyx":79
+/* "robot/pr2/pr2InvKin2.pyx":78
  * #     return max([abs(hu.angleDiff(th1, th2)) for (th1, th2) in zip(sol1, sol2)])
  * 
  * cdef list pr2KinIKfast(arm, T, current, chain):             # <<<<<<<<<<<<<<
@@ -2482,29 +2478,29 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("pr2KinIKfast", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":80
+  /* "robot/pr2/pr2InvKin2.pyx":79
  * 
  * cdef list pr2KinIKfast(arm, T, current, chain):
  *     cdef double bestDist = float('inf')             # <<<<<<<<<<<<<<
  *     cdef double dist
  *     cdef set sols
  */
-  __pyx_t_1 = __Pyx_PyObject_AsDouble(__pyx_n_s_inf); if (unlikely(__pyx_t_1 == ((double)-1) && PyErr_Occurred())) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_AsDouble(__pyx_n_s_inf); if (unlikely(__pyx_t_1 == ((double)-1) && PyErr_Occurred())) __PYX_ERR(0, 79, __pyx_L1_error)
   __pyx_v_bestDist = __pyx_t_1;
 
-  /* "robot/pr2/pr2InvKin2.pyx":83
+  /* "robot/pr2/pr2InvKin2.pyx":82
  *     cdef double dist
  *     cdef set sols
  *     sols = pr2KinIKfastAll(arm, T, current, chain)             # <<<<<<<<<<<<<<
  *     if not sols: return []
  *     bestSol = None
  */
-  __pyx_t_2 = __pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(__pyx_v_arm, __pyx_v_T, __pyx_v_current, __pyx_v_chain); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(__pyx_v_arm, __pyx_v_T, __pyx_v_current, __pyx_v_chain); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_sols = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":84
+  /* "robot/pr2/pr2InvKin2.pyx":83
  *     cdef set sols
  *     sols = pr2KinIKfastAll(arm, T, current, chain)
  *     if not sols: return []             # <<<<<<<<<<<<<<
@@ -2515,14 +2511,14 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
   __pyx_t_4 = ((!__pyx_t_3) != 0);
   if (__pyx_t_4) {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = ((PyObject*)__pyx_t_2);
     __pyx_t_2 = 0;
     goto __pyx_L0;
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":85
+  /* "robot/pr2/pr2InvKin2.pyx":84
  *     sols = pr2KinIKfastAll(arm, T, current, chain)
  *     if not sols: return []
  *     bestSol = None             # <<<<<<<<<<<<<<
@@ -2532,16 +2528,16 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
   __Pyx_INCREF(Py_None);
   __pyx_v_bestSol = Py_None;
 
-  /* "robot/pr2/pr2InvKin2.pyx":86
+  /* "robot/pr2/pr2InvKin2.pyx":85
  *     if not sols: return []
  *     bestSol = None
  *     for s in sols:             # <<<<<<<<<<<<<<
  *         dist = solnDist(current, s)
  *         if dist < bestDist:
  */
-  __pyx_t_2 = PyObject_GetIter(__pyx_v_sols); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_2 = PyObject_GetIter(__pyx_v_sols); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
   for (;;) {
     {
       __pyx_t_6 = __pyx_t_5(__pyx_t_2);
@@ -2549,7 +2545,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 86, __pyx_L1_error)
+          else __PYX_ERR(0, 85, __pyx_L1_error)
         }
         break;
       }
@@ -2558,7 +2554,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
     __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":87
+    /* "robot/pr2/pr2InvKin2.pyx":86
  *     bestSol = None
  *     for s in sols:
  *         dist = solnDist(current, s)             # <<<<<<<<<<<<<<
@@ -2567,7 +2563,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
  */
     __pyx_v_dist = __pyx_f_5robot_3pr2_3ik2_solnDist(__pyx_v_current, __pyx_v_s);
 
-    /* "robot/pr2/pr2InvKin2.pyx":88
+    /* "robot/pr2/pr2InvKin2.pyx":87
  *     for s in sols:
  *         dist = solnDist(current, s)
  *         if dist < bestDist:             # <<<<<<<<<<<<<<
@@ -2577,7 +2573,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
     __pyx_t_4 = ((__pyx_v_dist < __pyx_v_bestDist) != 0);
     if (__pyx_t_4) {
 
-      /* "robot/pr2/pr2InvKin2.pyx":89
+      /* "robot/pr2/pr2InvKin2.pyx":88
  *         dist = solnDist(current, s)
  *         if dist < bestDist:
  *             bestDist = dist             # <<<<<<<<<<<<<<
@@ -2586,7 +2582,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
  */
       __pyx_v_bestDist = __pyx_v_dist;
 
-      /* "robot/pr2/pr2InvKin2.pyx":90
+      /* "robot/pr2/pr2InvKin2.pyx":89
  *         if dist < bestDist:
  *             bestDist = dist
  *             bestSol = s             # <<<<<<<<<<<<<<
@@ -2596,7 +2592,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
       __Pyx_INCREF(__pyx_v_s);
       __Pyx_DECREF_SET(__pyx_v_bestSol, __pyx_v_s);
 
-      /* "robot/pr2/pr2InvKin2.pyx":88
+      /* "robot/pr2/pr2InvKin2.pyx":87
  *     for s in sols:
  *         dist = solnDist(current, s)
  *         if dist < bestDist:             # <<<<<<<<<<<<<<
@@ -2605,7 +2601,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
  */
     }
 
-    /* "robot/pr2/pr2InvKin2.pyx":86
+    /* "robot/pr2/pr2InvKin2.pyx":85
  *     if not sols: return []
  *     bestSol = None
  *     for s in sols:             # <<<<<<<<<<<<<<
@@ -2615,7 +2611,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":91
+  /* "robot/pr2/pr2InvKin2.pyx":90
  *             bestDist = dist
  *             bestSol = s
  *     return list(bestSol)             # <<<<<<<<<<<<<<
@@ -2623,13 +2619,13 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
  * cdef collectSols(int n, chain, set sols):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = PySequence_List(__pyx_v_bestSol); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_2 = PySequence_List(__pyx_v_bestSol); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":79
+  /* "robot/pr2/pr2InvKin2.pyx":78
  * #     return max([abs(hu.angleDiff(th1, th2)) for (th1, th2) in zip(sol1, sol2)])
  * 
  * cdef list pr2KinIKfast(arm, T, current, chain):             # <<<<<<<<<<<<<<
@@ -2652,7 +2648,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfast(PyObject *__pyx_v_arm, Py
   return __pyx_r;
 }
 
-/* "robot/pr2/pr2InvKin2.pyx":93
+/* "robot/pr2/pr2InvKin2.pyx":92
  *     return list(bestSol)
  * 
  * cdef collectSols(int n, chain, set sols):             # <<<<<<<<<<<<<<
@@ -2677,7 +2673,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
   int __pyx_t_9;
   __Pyx_RefNannySetupContext("collectSols", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":95
+  /* "robot/pr2/pr2InvKin2.pyx":94
  * cdef collectSols(int n, chain, set sols):
  *     cdef int i
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -2688,19 +2684,19 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
   for (__pyx_t_2 = 0; __pyx_t_2 < __pyx_t_1; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "robot/pr2/pr2InvKin2.pyx":96
+    /* "robot/pr2/pr2InvKin2.pyx":95
  *     cdef int i
  *     for i in range(n):
  *         sol = solnsKin[i*7 : (i+1)*7]             # <<<<<<<<<<<<<<
  *         if sol is not None:
  *             sol_list = sol.tolist()
  */
-    __pyx_t_3 = __Pyx_PyObject_GetSlice(((PyObject *)__pyx_v_5robot_3pr2_3ik2_solnsKin), (__pyx_v_i * 7), ((__pyx_v_i + 1) * 7), NULL, NULL, NULL, 1, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetSlice(((PyObject *)__pyx_v_5robot_3pr2_3ik2_solnsKin), (__pyx_v_i * 7), ((__pyx_v_i + 1) * 7), NULL, NULL, NULL, 1, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_XDECREF_SET(__pyx_v_sol, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":97
+    /* "robot/pr2/pr2InvKin2.pyx":96
  *     for i in range(n):
  *         sol = solnsKin[i*7 : (i+1)*7]
  *         if sol is not None:             # <<<<<<<<<<<<<<
@@ -2711,14 +2707,14 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
     __pyx_t_5 = (__pyx_t_4 != 0);
     if (__pyx_t_5) {
 
-      /* "robot/pr2/pr2InvKin2.pyx":98
+      /* "robot/pr2/pr2InvKin2.pyx":97
  *         sol = solnsKin[i*7 : (i+1)*7]
  *         if sol is not None:
  *             sol_list = sol.tolist()             # <<<<<<<<<<<<<<
  *             if chain.valid(sol_list):  # inside joint limits
  *                 sols.add(tuple(sol_list))
  */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sol, __pyx_n_s_tolist); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_sol, __pyx_n_s_tolist); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_t_7 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -2731,24 +2727,24 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
         }
       }
       if (__pyx_t_7) {
-        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       } else {
-        __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
       }
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_XDECREF_SET(__pyx_v_sol_list, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "robot/pr2/pr2InvKin2.pyx":99
+      /* "robot/pr2/pr2InvKin2.pyx":98
  *         if sol is not None:
  *             sol_list = sol.tolist()
  *             if chain.valid(sol_list):  # inside joint limits             # <<<<<<<<<<<<<<
  *                 sols.add(tuple(sol_list))
  * 
  */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_valid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_valid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_t_7 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -2761,13 +2757,13 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
         }
       }
       if (!__pyx_t_7) {
-        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_sol_list); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_sol_list); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
       } else {
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_6)) {
           PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_sol_list};
-          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
           __Pyx_GOTREF(__pyx_t_3);
         } else
@@ -2775,29 +2771,29 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
           PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_v_sol_list};
-          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
           __Pyx_GOTREF(__pyx_t_3);
         } else
         #endif
         {
-          __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 98, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
           __Pyx_INCREF(__pyx_v_sol_list);
           __Pyx_GIVEREF(__pyx_v_sol_list);
           PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_v_sol_list);
-          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       if (__pyx_t_5) {
 
-        /* "robot/pr2/pr2InvKin2.pyx":100
+        /* "robot/pr2/pr2InvKin2.pyx":99
  *             sol_list = sol.tolist()
  *             if chain.valid(sol_list):  # inside joint limits
  *                 sols.add(tuple(sol_list))             # <<<<<<<<<<<<<<
@@ -2806,14 +2802,14 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
  */
         if (unlikely(__pyx_v_sols == Py_None)) {
           PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%s'", "add");
-          __PYX_ERR(0, 100, __pyx_L1_error)
+          __PYX_ERR(0, 99, __pyx_L1_error)
         }
-        __pyx_t_3 = PySequence_Tuple(__pyx_v_sol_list); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error)
+        __pyx_t_3 = PySequence_Tuple(__pyx_v_sol_list); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_9 = PySet_Add(__pyx_v_sols, __pyx_t_3); if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 100, __pyx_L1_error)
+        __pyx_t_9 = PySet_Add(__pyx_v_sols, __pyx_t_3); if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "robot/pr2/pr2InvKin2.pyx":99
+        /* "robot/pr2/pr2InvKin2.pyx":98
  *         if sol is not None:
  *             sol_list = sol.tolist()
  *             if chain.valid(sol_list):  # inside joint limits             # <<<<<<<<<<<<<<
@@ -2822,7 +2818,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
  */
       }
 
-      /* "robot/pr2/pr2InvKin2.pyx":97
+      /* "robot/pr2/pr2InvKin2.pyx":96
  *     for i in range(n):
  *         sol = solnsKin[i*7 : (i+1)*7]
  *         if sol is not None:             # <<<<<<<<<<<<<<
@@ -2832,7 +2828,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
     }
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":93
+  /* "robot/pr2/pr2InvKin2.pyx":92
  *     return list(bestSol)
  * 
  * cdef collectSols(int n, chain, set sols):             # <<<<<<<<<<<<<<
@@ -2858,7 +2854,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_collectSols(int __pyx_v_n, PyObject *_
   return __pyx_r;
 }
 
-/* "robot/pr2/pr2InvKin2.pyx":102
+/* "robot/pr2/pr2InvKin2.pyx":101
  *                 sols.add(tuple(sol_list))
  * 
  * cdef set pr2KinIKfastAll(arm, T, current, chain):             # <<<<<<<<<<<<<<
@@ -2896,20 +2892,20 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   double __pyx_t_14;
   __Pyx_RefNannySetupContext("pr2KinIKfastAll", 0);
 
-  /* "robot/pr2/pr2InvKin2.pyx":107
+  /* "robot/pr2/pr2InvKin2.pyx":106
  *     cdef set sols
  * 
  *     nsols = nsolnsKin             # <<<<<<<<<<<<<<
  *     for i in range(3):
  *         for j in range(3):
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_nsolnsKin); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_nsolnsKin); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_nsols = __pyx_t_2;
 
-  /* "robot/pr2/pr2InvKin2.pyx":108
+  /* "robot/pr2/pr2InvKin2.pyx":107
  * 
  *     nsols = nsolnsKin
  *     for i in range(3):             # <<<<<<<<<<<<<<
@@ -2919,7 +2915,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   for (__pyx_t_2 = 0; __pyx_t_2 < 3; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "robot/pr2/pr2InvKin2.pyx":109
+    /* "robot/pr2/pr2InvKin2.pyx":108
  *     nsols = nsolnsKin
  *     for i in range(3):
  *         for j in range(3):             # <<<<<<<<<<<<<<
@@ -2929,18 +2925,18 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     for (__pyx_t_3 = 0; __pyx_t_3 < 3; __pyx_t_3+=1) {
       __pyx_v_j = __pyx_t_3;
 
-      /* "robot/pr2/pr2InvKin2.pyx":110
+      /* "robot/pr2/pr2InvKin2.pyx":109
  *     for i in range(3):
  *         for j in range(3):
  *             rotKin[i*3+j] = T[i, j]             # <<<<<<<<<<<<<<
  *     for i in range(3):
  *         transKin[i] = T[i, 3]
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_GIVEREF(__pyx_t_1);
       PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -2948,16 +2944,16 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
       PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
       __pyx_t_1 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_4 = PyObject_GetItem(__pyx_v_T, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_4 = PyObject_GetItem(__pyx_v_T, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_6 = ((__pyx_v_i * 3) + __pyx_v_j);
-      if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_rotKin), __pyx_t_6, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 1, 1) < 0)) __PYX_ERR(0, 110, __pyx_L1_error)
+      if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_rotKin), __pyx_t_6, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 1, 1) < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":111
+  /* "robot/pr2/pr2InvKin2.pyx":110
  *         for j in range(3):
  *             rotKin[i*3+j] = T[i, j]
  *     for i in range(3):             # <<<<<<<<<<<<<<
@@ -2967,16 +2963,16 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   for (__pyx_t_2 = 0; __pyx_t_2 < 3; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "robot/pr2/pr2InvKin2.pyx":112
+    /* "robot/pr2/pr2InvKin2.pyx":111
  *             rotKin[i*3+j] = T[i, j]
  *     for i in range(3):
  *         transKin[i] = T[i, 3]             # <<<<<<<<<<<<<<
  *     if arm=='r':
  *         # bug in right arm kinematics, this is the distance between the shoulders
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_i); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
@@ -2984,24 +2980,24 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     __Pyx_GIVEREF(__pyx_int_3);
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_int_3);
     __pyx_t_4 = 0;
-    __pyx_t_4 = PyObject_GetItem(__pyx_v_T, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_4 = PyObject_GetItem(__pyx_v_T, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin), __pyx_v_i, __pyx_t_4, int, 1, __Pyx_PyInt_From_int, 0, 1, 1) < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin), __pyx_v_i, __pyx_t_4, int, 1, __Pyx_PyInt_From_int, 0, 1, 1) < 0)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":113
+  /* "robot/pr2/pr2InvKin2.pyx":112
  *     for i in range(3):
  *         transKin[i] = T[i, 3]
  *     if arm=='r':             # <<<<<<<<<<<<<<
  *         # bug in right arm kinematics, this is the distance between the shoulders
  *         transKin[1] += 0.376
  */
-  __pyx_t_7 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_r, Py_EQ)); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_7 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_r, Py_EQ)); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
   if (__pyx_t_7) {
 
-    /* "robot/pr2/pr2InvKin2.pyx":115
+    /* "robot/pr2/pr2InvKin2.pyx":114
  *     if arm=='r':
  *         # bug in right arm kinematics, this is the distance between the shoulders
  *         transKin[1] += 0.376             # <<<<<<<<<<<<<<
@@ -3009,15 +3005,15 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  *     lower, upper = chain.limits()[2]
  */
     __pyx_t_8 = 1;
-    __pyx_t_4 = __Pyx_GetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin), __pyx_t_8, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin), __pyx_t_8, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyFloat_AddObjC(__pyx_t_4, __pyx_float_0_376, 0.376, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyFloat_AddObjC(__pyx_t_4, __pyx_float_0_376, 0.376, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin), __pyx_t_8, __pyx_t_5, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1) < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin), __pyx_t_8, __pyx_t_5, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1) < 0)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":113
+    /* "robot/pr2/pr2InvKin2.pyx":112
  *     for i in range(3):
  *         transKin[i] = T[i, 3]
  *     if arm=='r':             # <<<<<<<<<<<<<<
@@ -3026,7 +3022,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  */
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":116
+  /* "robot/pr2/pr2InvKin2.pyx":115
  *         # bug in right arm kinematics, this is the distance between the shoulders
  *         transKin[1] += 0.376
  *     step = IK_FAST_STEP             # <<<<<<<<<<<<<<
@@ -3035,14 +3031,14 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  */
   __pyx_v_step = __pyx_v_5robot_3pr2_3ik2_IK_FAST_STEP;
 
-  /* "robot/pr2/pr2InvKin2.pyx":117
+  /* "robot/pr2/pr2InvKin2.pyx":116
  *         transKin[1] += 0.376
  *     step = IK_FAST_STEP
  *     lower, upper = chain.limits()[2]             # <<<<<<<<<<<<<<
  *     th0 = current[2]
  *     if not lower <= th0 <= upper: return set([])
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_limits); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_chain, __pyx_n_s_limits); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -3055,14 +3051,14 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     }
   }
   if (__pyx_t_1) {
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   } else {
-    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
   }
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_5, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_5, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   if ((likely(PyTuple_CheckExact(__pyx_t_4))) || (PyList_CheckExact(__pyx_t_4))) {
@@ -3075,7 +3071,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 117, __pyx_L1_error)
+      __PYX_ERR(0, 116, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
@@ -3088,15 +3084,15 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_t_1);
     #else
-    __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     #endif
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_9 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_9 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext;
@@ -3104,7 +3100,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     __Pyx_GOTREF(__pyx_t_5);
     index = 1; __pyx_t_1 = __pyx_t_10(__pyx_t_9); if (unlikely(!__pyx_t_1)) goto __pyx_L10_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_1);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 117, __pyx_L1_error)
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 2) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
     __pyx_t_10 = NULL;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     goto __pyx_L11_unpacking_done;
@@ -3112,30 +3108,30 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_10 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 117, __pyx_L1_error)
+    __PYX_ERR(0, 116, __pyx_L1_error)
     __pyx_L11_unpacking_done:;
   }
-  __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_11 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 117, __pyx_L1_error)
+  __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_11 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 117, __pyx_L1_error)
+  __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_t_1); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_lower = __pyx_t_11;
   __pyx_v_upper = __pyx_t_12;
 
-  /* "robot/pr2/pr2InvKin2.pyx":118
+  /* "robot/pr2/pr2InvKin2.pyx":117
  *     step = IK_FAST_STEP
  *     lower, upper = chain.limits()[2]
  *     th0 = current[2]             # <<<<<<<<<<<<<<
  *     if not lower <= th0 <= upper: return set([])
  *     nsteps = int(max((upper-th0)/step, (th0-lower)/step))
  */
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_current, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_current, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_th0 = __pyx_t_12;
 
-  /* "robot/pr2/pr2InvKin2.pyx":119
+  /* "robot/pr2/pr2InvKin2.pyx":118
  *     lower, upper = chain.limits()[2]
  *     th0 = current[2]
  *     if not lower <= th0 <= upper: return set([])             # <<<<<<<<<<<<<<
@@ -3149,14 +3145,14 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   __pyx_t_13 = ((!(__pyx_t_7 != 0)) != 0);
   if (__pyx_t_13) {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_4 = PySet_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_4 = PySet_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 118, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_r = ((PyObject*)__pyx_t_4);
     __pyx_t_4 = 0;
     goto __pyx_L0;
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":120
+  /* "robot/pr2/pr2InvKin2.pyx":119
  *     th0 = current[2]
  *     if not lower <= th0 <= upper: return set([])
  *     nsteps = int(max((upper-th0)/step, (th0-lower)/step))             # <<<<<<<<<<<<<<
@@ -3166,13 +3162,13 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   __pyx_t_12 = (__pyx_v_th0 - __pyx_v_lower);
   if (unlikely(__pyx_v_step == 0)) {
     PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-    __PYX_ERR(0, 120, __pyx_L1_error)
+    __PYX_ERR(0, 119, __pyx_L1_error)
   }
   __pyx_t_11 = (__pyx_t_12 / __pyx_v_step);
   __pyx_t_12 = (__pyx_v_upper - __pyx_v_th0);
   if (unlikely(__pyx_v_step == 0)) {
     PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-    __PYX_ERR(0, 120, __pyx_L1_error)
+    __PYX_ERR(0, 119, __pyx_L1_error)
   }
   __pyx_t_14 = (__pyx_t_12 / __pyx_v_step);
   if (((__pyx_t_11 > __pyx_t_14) != 0)) {
@@ -3180,35 +3176,35 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   } else {
     __pyx_t_12 = __pyx_t_14;
   }
-  __pyx_t_4 = __Pyx_PyInt_FromDouble(__pyx_t_12); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_FromDouble(__pyx_t_12); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_nsteps = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":121
+  /* "robot/pr2/pr2InvKin2.pyx":120
  *     if not lower <= th0 <= upper: return set([])
  *     nsteps = int(max((upper-th0)/step, (th0-lower)/step))
  *     sols = set([])             # <<<<<<<<<<<<<<
  *     for i in range(nsteps):
  *         stepsize = i*step
  */
-  __pyx_t_4 = PySet_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+  __pyx_t_4 = PySet_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_sols = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":122
+  /* "robot/pr2/pr2InvKin2.pyx":121
  *     nsteps = int(max((upper-th0)/step, (th0-lower)/step))
  *     sols = set([])
  *     for i in range(nsteps):             # <<<<<<<<<<<<<<
  *         stepsize = i*step
  *         freeKin[0] = th0 + stepsize
  */
-  __pyx_t_6 = __Pyx_PyInt_As_long(__pyx_v_nsteps); if (unlikely((__pyx_t_6 == (long)-1) && PyErr_Occurred())) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_As_long(__pyx_v_nsteps); if (unlikely((__pyx_t_6 == (long)-1) && PyErr_Occurred())) __PYX_ERR(0, 121, __pyx_L1_error)
   for (__pyx_t_2 = 0; __pyx_t_2 < __pyx_t_6; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "robot/pr2/pr2InvKin2.pyx":123
+    /* "robot/pr2/pr2InvKin2.pyx":122
  *     sols = set([])
  *     for i in range(nsteps):
  *         stepsize = i*step             # <<<<<<<<<<<<<<
@@ -3217,47 +3213,47 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  */
     __pyx_v_stepsize = (__pyx_v_i * __pyx_v_step);
 
-    /* "robot/pr2/pr2InvKin2.pyx":124
+    /* "robot/pr2/pr2InvKin2.pyx":123
  *     for i in range(nsteps):
  *         stepsize = i*step
  *         freeKin[0] = th0 + stepsize             # <<<<<<<<<<<<<<
  *         if freeKin[0] <= upper:
  *             if arm == 'l':
  */
-    __pyx_t_4 = PyFloat_FromDouble((__pyx_v_th0 + __pyx_v_stepsize)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_4 = PyFloat_FromDouble((__pyx_v_th0 + __pyx_v_stepsize)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, __pyx_t_4, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":125
+    /* "robot/pr2/pr2InvKin2.pyx":124
  *         stepsize = i*step
  *         freeKin[0] = th0 + stepsize
  *         if freeKin[0] <= upper:             # <<<<<<<<<<<<<<
  *             if arm == 'l':
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  */
-    __pyx_t_4 = __Pyx_GetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyFloat_FromDouble(__pyx_v_upper); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_1 = PyFloat_FromDouble(__pyx_v_upper); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_1, Py_LE); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_1, Py_LE); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     if (__pyx_t_13) {
 
-      /* "robot/pr2/pr2InvKin2.pyx":126
+      /* "robot/pr2/pr2InvKin2.pyx":125
  *         freeKin[0] = th0 + stepsize
  *         if freeKin[0] <= upper:
  *             if arm == 'l':             # <<<<<<<<<<<<<<
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             else:
  */
-      __pyx_t_13 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_l, Py_EQ)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 126, __pyx_L1_error)
+      __pyx_t_13 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_l, Py_EQ)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
       if (__pyx_t_13) {
 
-        /* "robot/pr2/pr2InvKin2.pyx":127
+        /* "robot/pr2/pr2InvKin2.pyx":126
  *         if freeKin[0] <= upper:
  *             if arm == 'l':
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)             # <<<<<<<<<<<<<<
@@ -3266,7 +3262,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  */
         __pyx_v_n = ikLeft(((double const *)__pyx_v_5robot_3pr2_3ik2_transKin->data), ((double const *)__pyx_v_5robot_3pr2_3ik2_rotKin->data), ((double const *)__pyx_v_5robot_3pr2_3ik2_freeKin->data), ((int const )__pyx_v_nsols), ((double *)__pyx_v_5robot_3pr2_3ik2_solnsKin->data));
 
-        /* "robot/pr2/pr2InvKin2.pyx":126
+        /* "robot/pr2/pr2InvKin2.pyx":125
  *         freeKin[0] = th0 + stepsize
  *         if freeKin[0] <= upper:
  *             if arm == 'l':             # <<<<<<<<<<<<<<
@@ -3276,7 +3272,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
         goto __pyx_L16;
       }
 
-      /* "robot/pr2/pr2InvKin2.pyx":129
+      /* "robot/pr2/pr2InvKin2.pyx":128
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             else:
  *                 n = ikRight(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)             # <<<<<<<<<<<<<<
@@ -3288,25 +3284,25 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
       }
       __pyx_L16:;
 
-      /* "robot/pr2/pr2InvKin2.pyx":130
+      /* "robot/pr2/pr2InvKin2.pyx":129
  *             else:
  *                 n = ikRight(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             collectSols(n, chain, sols)             # <<<<<<<<<<<<<<
  *             if len(sols) >= 2: return sols
  *         freeKin[0] = th0 - stepsize
  */
-      __pyx_t_5 = __pyx_f_5robot_3pr2_3ik2_collectSols(__pyx_v_n, __pyx_v_chain, __pyx_v_sols); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+      __pyx_t_5 = __pyx_f_5robot_3pr2_3ik2_collectSols(__pyx_v_n, __pyx_v_chain, __pyx_v_sols); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "robot/pr2/pr2InvKin2.pyx":131
+      /* "robot/pr2/pr2InvKin2.pyx":130
  *                 n = ikRight(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             collectSols(n, chain, sols)
  *             if len(sols) >= 2: return sols             # <<<<<<<<<<<<<<
  *         freeKin[0] = th0 - stepsize
  *         if freeKin[0] >= lower:
  */
-      __pyx_t_8 = PySet_GET_SIZE(__pyx_v_sols); if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 131, __pyx_L1_error)
+      __pyx_t_8 = PySet_GET_SIZE(__pyx_v_sols); if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 130, __pyx_L1_error)
       __pyx_t_13 = ((__pyx_t_8 >= 2) != 0);
       if (__pyx_t_13) {
         __Pyx_XDECREF(__pyx_r);
@@ -3315,7 +3311,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
         goto __pyx_L0;
       }
 
-      /* "robot/pr2/pr2InvKin2.pyx":125
+      /* "robot/pr2/pr2InvKin2.pyx":124
  *         stepsize = i*step
  *         freeKin[0] = th0 + stepsize
  *         if freeKin[0] <= upper:             # <<<<<<<<<<<<<<
@@ -3324,47 +3320,47 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  */
     }
 
-    /* "robot/pr2/pr2InvKin2.pyx":132
+    /* "robot/pr2/pr2InvKin2.pyx":131
  *             collectSols(n, chain, sols)
  *             if len(sols) >= 2: return sols
  *         freeKin[0] = th0 - stepsize             # <<<<<<<<<<<<<<
  *         if freeKin[0] >= lower:
  *             if arm == 'l':
  */
-    __pyx_t_5 = PyFloat_FromDouble((__pyx_v_th0 - __pyx_v_stepsize)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_5 = PyFloat_FromDouble((__pyx_v_th0 - __pyx_v_stepsize)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, __pyx_t_5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (unlikely(__Pyx_SetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, __pyx_t_5, long, 1, __Pyx_PyInt_From_long, 0, 0, 1) < 0)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "robot/pr2/pr2InvKin2.pyx":133
+    /* "robot/pr2/pr2InvKin2.pyx":132
  *             if len(sols) >= 2: return sols
  *         freeKin[0] = th0 - stepsize
  *         if freeKin[0] >= lower:             # <<<<<<<<<<<<<<
  *             if arm == 'l':
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  */
-    __pyx_t_5 = __Pyx_GetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin), 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = PyFloat_FromDouble(__pyx_v_lower); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_1 = PyFloat_FromDouble(__pyx_v_lower); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyObject_RichCompare(__pyx_t_5, __pyx_t_1, Py_GE); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_4 = PyObject_RichCompare(__pyx_t_5, __pyx_t_1, Py_GE); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (__pyx_t_13) {
 
-      /* "robot/pr2/pr2InvKin2.pyx":134
+      /* "robot/pr2/pr2InvKin2.pyx":133
  *         freeKin[0] = th0 - stepsize
  *         if freeKin[0] >= lower:
  *             if arm == 'l':             # <<<<<<<<<<<<<<
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             else:
  */
-      __pyx_t_13 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_l, Py_EQ)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 134, __pyx_L1_error)
+      __pyx_t_13 = (__Pyx_PyString_Equals(__pyx_v_arm, __pyx_n_s_l, Py_EQ)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
       if (__pyx_t_13) {
 
-        /* "robot/pr2/pr2InvKin2.pyx":135
+        /* "robot/pr2/pr2InvKin2.pyx":134
  *         if freeKin[0] >= lower:
  *             if arm == 'l':
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)             # <<<<<<<<<<<<<<
@@ -3373,7 +3369,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
  */
         __pyx_v_n = ikLeft(((double const *)__pyx_v_5robot_3pr2_3ik2_transKin->data), ((double const *)__pyx_v_5robot_3pr2_3ik2_rotKin->data), ((double const *)__pyx_v_5robot_3pr2_3ik2_freeKin->data), ((int const )__pyx_v_nsols), ((double *)__pyx_v_5robot_3pr2_3ik2_solnsKin->data));
 
-        /* "robot/pr2/pr2InvKin2.pyx":134
+        /* "robot/pr2/pr2InvKin2.pyx":133
  *         freeKin[0] = th0 - stepsize
  *         if freeKin[0] >= lower:
  *             if arm == 'l':             # <<<<<<<<<<<<<<
@@ -3383,7 +3379,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
         goto __pyx_L19;
       }
 
-      /* "robot/pr2/pr2InvKin2.pyx":137
+      /* "robot/pr2/pr2InvKin2.pyx":136
  *                 n = ikLeft(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             else:
  *                 n = ikRight(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)             # <<<<<<<<<<<<<<
@@ -3395,25 +3391,25 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
       }
       __pyx_L19:;
 
-      /* "robot/pr2/pr2InvKin2.pyx":138
+      /* "robot/pr2/pr2InvKin2.pyx":137
  *             else:
  *                 n = ikRight(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             collectSols(n, chain, sols)             # <<<<<<<<<<<<<<
  *             if len(sols) >= 2: return sols
  * 
  */
-      __pyx_t_4 = __pyx_f_5robot_3pr2_3ik2_collectSols(__pyx_v_n, __pyx_v_chain, __pyx_v_sols); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+      __pyx_t_4 = __pyx_f_5robot_3pr2_3ik2_collectSols(__pyx_v_n, __pyx_v_chain, __pyx_v_sols); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "robot/pr2/pr2InvKin2.pyx":139
+      /* "robot/pr2/pr2InvKin2.pyx":138
  *                 n = ikRight(<const double *>transKin.data, <const double *>rotKin.data, <const double *>freeKin.data, <const int>nsols, <double *>solnsKin.data)
  *             collectSols(n, chain, sols)
  *             if len(sols) >= 2: return sols             # <<<<<<<<<<<<<<
  * 
  *     return sols
  */
-      __pyx_t_8 = PySet_GET_SIZE(__pyx_v_sols); if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 139, __pyx_L1_error)
+      __pyx_t_8 = PySet_GET_SIZE(__pyx_v_sols); if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 138, __pyx_L1_error)
       __pyx_t_13 = ((__pyx_t_8 >= 2) != 0);
       if (__pyx_t_13) {
         __Pyx_XDECREF(__pyx_r);
@@ -3422,7 +3418,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
         goto __pyx_L0;
       }
 
-      /* "robot/pr2/pr2InvKin2.pyx":133
+      /* "robot/pr2/pr2InvKin2.pyx":132
  *             if len(sols) >= 2: return sols
  *         freeKin[0] = th0 - stepsize
  *         if freeKin[0] >= lower:             # <<<<<<<<<<<<<<
@@ -3432,7 +3428,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
     }
   }
 
-  /* "robot/pr2/pr2InvKin2.pyx":141
+  /* "robot/pr2/pr2InvKin2.pyx":140
  *             if len(sols) >= 2: return sols
  * 
  *     return sols             # <<<<<<<<<<<<<<
@@ -3442,7 +3438,7 @@ static PyObject *__pyx_f_5robot_3pr2_3ik2_pr2KinIKfastAll(PyObject *__pyx_v_arm,
   __pyx_r = __pyx_v_sols;
   goto __pyx_L0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":102
+  /* "robot/pr2/pr2InvKin2.pyx":101
  *                 sols.add(tuple(sol_list))
  * 
  * cdef set pr2KinIKfastAll(arm, T, current, chain):             # <<<<<<<<<<<<<<
@@ -6010,14 +6006,13 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_Non_native_byte_order_not_suppor, __pyx_k_Non_native_byte_order_not_suppor, sizeof(__pyx_k_Non_native_byte_order_not_suppor), 0, 1, 0, 0},
   {&__pyx_n_s_Pose, __pyx_k_Pose, sizeof(__pyx_k_Pose), 0, 0, 1, 1},
   {&__pyx_n_s_RuntimeError, __pyx_k_RuntimeError, sizeof(__pyx_k_RuntimeError), 0, 0, 1, 1},
-  {&__pyx_kp_s_Users_caelan_Programs_LIS_git_a, __pyx_k_Users_caelan_Programs_LIS_git_a, sizeof(__pyx_k_Users_caelan_Programs_LIS_git_a), 0, 0, 1, 0},
+  {&__pyx_kp_s_Users_caelan_Programs_LIS_git_P, __pyx_k_Users_caelan_Programs_LIS_git_P, sizeof(__pyx_k_Users_caelan_Programs_LIS_git_P), 0, 0, 1, 0},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s__10, __pyx_k__10, sizeof(__pyx_k__10), 0, 0, 1, 1},
   {&__pyx_n_s_arm, __pyx_k_arm, sizeof(__pyx_k_arm), 0, 0, 1, 1},
   {&__pyx_n_s_armInvKin2, __pyx_k_armInvKin2, sizeof(__pyx_k_armInvKin2), 0, 0, 1, 1},
   {&__pyx_n_s_armName, __pyx_k_armName, sizeof(__pyx_k_armName), 0, 0, 1, 1},
   {&__pyx_n_s_ascontiguousarray, __pyx_k_ascontiguousarray, sizeof(__pyx_k_ascontiguousarray), 0, 0, 1, 1},
-  {&__pyx_n_s_autil_utils, __pyx_k_autil_utils, sizeof(__pyx_k_autil_utils), 0, 0, 1, 1},
   {&__pyx_n_s_chains, __pyx_k_chains, sizeof(__pyx_k_chains), 0, 0, 1, 1},
   {&__pyx_n_s_chainsByName, __pyx_k_chainsByName, sizeof(__pyx_k_chainsByName), 0, 0, 1, 1},
   {&__pyx_n_s_clearInvKinCache2, __pyx_k_clearInvKinCache2, sizeof(__pyx_k_clearInvKinCache2), 0, 0, 1, 1},
@@ -6057,7 +6052,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_pi, __pyx_k_pi, sizeof(__pyx_k_pi), 0, 0, 1, 1},
   {&__pyx_n_s_pr2LeftArm, __pyx_k_pr2LeftArm, sizeof(__pyx_k_pr2LeftArm), 0, 0, 1, 1},
   {&__pyx_n_s_pr2RightArm, __pyx_k_pr2RightArm, sizeof(__pyx_k_pr2RightArm), 0, 0, 1, 1},
-  {&__pyx_n_s_prettyString, __pyx_k_prettyString, sizeof(__pyx_k_prettyString), 0, 0, 1, 1},
   {&__pyx_n_s_r, __pyx_k_r, sizeof(__pyx_k_r), 0, 0, 1, 1},
   {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
   {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
@@ -6075,8 +6069,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_reduce = __Pyx_GetBuiltinName(__pyx_n_s_reduce); if (!__pyx_builtin_reduce) __PYX_ERR(0, 31, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_builtin_reduce = __Pyx_GetBuiltinName(__pyx_n_s_reduce); if (!__pyx_builtin_reduce) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 69, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 218, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 799, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(1, 989, __pyx_L1_error)
@@ -6186,90 +6180,90 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "robot/pr2/pr2InvKin2.pyx":13
+  /* "robot/pr2/pr2InvKin2.pyx":12
  * 
  * # The nominal tool offset in ikFast
  * gripperTip = hu.Pose(0.18,0.0,0.0,0.0)             # <<<<<<<<<<<<<<
  * gripperToolOffset = numpy.dot(gripperTip.matrix,
  *                            rotation_matrix(math.pi/2,(0,1,0)))
  */
-  __pyx_tuple__11 = PyTuple_Pack(4, __pyx_float_0_18, __pyx_float_0_0, __pyx_float_0_0, __pyx_float_0_0); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(4, __pyx_float_0_18, __pyx_float_0_0, __pyx_float_0_0, __pyx_float_0_0); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "robot/pr2/pr2InvKin2.pyx":15
+  /* "robot/pr2/pr2InvKin2.pyx":14
  * gripperTip = hu.Pose(0.18,0.0,0.0,0.0)
  * gripperToolOffset = numpy.dot(gripperTip.matrix,
  *                            rotation_matrix(math.pi/2,(0,1,0)))             # <<<<<<<<<<<<<<
  * 
  * cdef dict cache = {}
  */
-  __pyx_tuple__12 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_1, __pyx_int_0); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_1, __pyx_int_0); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "robot/pr2/pr2InvKin2.pyx":18
+  /* "robot/pr2/pr2InvKin2.pyx":17
  * 
  * cdef dict cache = {}
  * def clearInvKinCache2():             # <<<<<<<<<<<<<<
  *     cache.clear()
  * 
  */
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_caelan_Programs_LIS_git_a, __pyx_n_s_clearInvKinCache2, 18, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_caelan_Programs_LIS_git_P, __pyx_n_s_clearInvKinCache2, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 17, __pyx_L1_error)
 
-  /* "robot/pr2/pr2InvKin2.pyx":24
+  /* "robot/pr2/pr2InvKin2.pyx":23
  * cdef double IK_FAST_STEP = 0.1
  * 
  * def armInvKin2(chains, arm, torso, target, conf,             # <<<<<<<<<<<<<<
  *               returnAll = False):
  *     name = 'ArmInvKin'
  */
-  __pyx_tuple__14 = PyTuple_Pack(12, __pyx_n_s_chains, __pyx_n_s_arm, __pyx_n_s_torso, __pyx_n_s_target, __pyx_n_s_conf, __pyx_n_s_returnAll, __pyx_n_s_name, __pyx_n_s_newHandPoseRel, __pyx_n_s_armName, __pyx_n_s_current, __pyx_n_s_key, __pyx_n_s_newArmAngles); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(12, __pyx_n_s_chains, __pyx_n_s_arm, __pyx_n_s_torso, __pyx_n_s_target, __pyx_n_s_conf, __pyx_n_s_returnAll, __pyx_n_s_name, __pyx_n_s_newHandPoseRel, __pyx_n_s_armName, __pyx_n_s_current, __pyx_n_s_key, __pyx_n_s_newArmAngles); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(6, 0, 12, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_caelan_Programs_LIS_git_a, __pyx_n_s_armInvKin2, 24, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(6, 0, 12, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_caelan_Programs_LIS_git_P, __pyx_n_s_armInvKin2, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  /* "robot/pr2/pr2InvKin2.pyx":50
+  /* "robot/pr2/pr2InvKin2.pyx":49
  * nsolnsKin = 10
  * cdef numpy.ndarray rotKin, transKin, freeKin, solnsKin, jtKin
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_int_9); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_int_9); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "robot/pr2/pr2InvKin2.pyx":51
+  /* "robot/pr2/pr2InvKin2.pyx":50
  * cdef numpy.ndarray rotKin, transKin, freeKin, solnsKin, jtKin
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)
  */
-  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "robot/pr2/pr2InvKin2.pyx":52
+  /* "robot/pr2/pr2InvKin2.pyx":51
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)
  */
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "robot/pr2/pr2InvKin2.pyx":54
+  /* "robot/pr2/pr2InvKin2.pyx":53
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * 
  * cdef inline double angleDiff(double x, double y):
  */
-  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_int_7); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_int_7); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
   __Pyx_RefNannyFinishContext();
@@ -6458,7 +6452,7 @@ PyMODINIT_FUNC PyInit_ik2(void)
  * cimport ik2
  * import ik2             # <<<<<<<<<<<<<<
  * 
- * from autil.utils import prettyString
+ * from geometry.transformations import rotation_matrix
  */
   __pyx_t_2 = __Pyx_Import(__pyx_n_s_ik2, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6468,96 +6462,75 @@ PyMODINIT_FUNC PyInit_ik2(void)
   /* "robot/pr2/pr2InvKin2.pyx":9
  * import ik2
  * 
- * from autil.utils import prettyString             # <<<<<<<<<<<<<<
- * from geometry.transformations import rotation_matrix
- * 
- */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_INCREF(__pyx_n_s_prettyString);
-  __Pyx_GIVEREF(__pyx_n_s_prettyString);
-  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_prettyString);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_autil_utils, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_prettyString); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_prettyString, __pyx_t_2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "robot/pr2/pr2InvKin2.pyx":10
- * 
- * from autil.utils import prettyString
  * from geometry.transformations import rotation_matrix             # <<<<<<<<<<<<<<
  * 
  * # The nominal tool offset in ikFast
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_rotation_matrix);
   __Pyx_GIVEREF(__pyx_n_s_rotation_matrix);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_rotation_matrix);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_geometry_transformations, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_rotation_matrix); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_rotation_matrix);
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_geometry_transformations, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_rotation_matrix, __pyx_t_1) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_rotation_matrix); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_rotation_matrix, __pyx_t_2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":13
+  /* "robot/pr2/pr2InvKin2.pyx":12
  * 
  * # The nominal tool offset in ikFast
  * gripperTip = hu.Pose(0.18,0.0,0.0,0.0)             # <<<<<<<<<<<<<<
  * gripperToolOffset = numpy.dot(gripperTip.matrix,
  *                            rotation_matrix(math.pi/2,(0,1,0)))
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_hu); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Pose); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_hu); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_Pose); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_gripperTip, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_gripperTip, __pyx_t_1) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":14
+  /* "robot/pr2/pr2InvKin2.pyx":13
  * # The nominal tool offset in ikFast
  * gripperTip = hu.Pose(0.18,0.0,0.0,0.0)
  * gripperToolOffset = numpy.dot(gripperTip.matrix,             # <<<<<<<<<<<<<<
  *                            rotation_matrix(math.pi/2,(0,1,0)))
  * 
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dot); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_gripperTip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_matrix); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_gripperTip); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_matrix); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":15
+  /* "robot/pr2/pr2InvKin2.pyx":14
  * gripperTip = hu.Pose(0.18,0.0,0.0,0.0)
  * gripperToolOffset = numpy.dot(gripperTip.matrix,
  *                            rotation_matrix(math.pi/2,(0,1,0)))             # <<<<<<<<<<<<<<
  * 
  * cdef dict cache = {}
  */
-  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_rotation_matrix); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_rotation_matrix); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_pi); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_pi); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_7, __pyx_int_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_7, __pyx_int_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_7 = NULL;
@@ -6575,23 +6548,23 @@ PyMODINIT_FUNC PyInit_ik2(void)
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_6, __pyx_tuple__12};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   } else
   #endif
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_6, __pyx_tuple__12};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 15, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 14, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -6602,8 +6575,8 @@ PyMODINIT_FUNC PyInit_ik2(void)
     __Pyx_GIVEREF(__pyx_tuple__12);
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_tuple__12);
     __pyx_t_6 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6621,89 +6594,89 @@ PyMODINIT_FUNC PyInit_ik2(void)
   }
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_4, __pyx_t_1};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
+    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_4, __pyx_t_2};
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   } else
   #endif
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
-    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_4, __pyx_t_1};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
+    PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_4, __pyx_t_2};
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 14, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5); __pyx_t_5 = NULL;
     }
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_8, __pyx_t_4);
-    __Pyx_GIVEREF(__pyx_t_1);
-    PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_1);
+    __Pyx_GIVEREF(__pyx_t_2);
+    PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_2);
     __pyx_t_4 = 0;
-    __pyx_t_1 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_9, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_2 = 0;
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_gripperToolOffset, __pyx_t_2) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_gripperToolOffset, __pyx_t_1) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":17
+  /* "robot/pr2/pr2InvKin2.pyx":16
  *                            rotation_matrix(math.pi/2,(0,1,0)))
  * 
  * cdef dict cache = {}             # <<<<<<<<<<<<<<
  * def clearInvKinCache2():
  *     cache.clear()
  */
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(__pyx_v_5robot_3pr2_3ik2_cache);
-  __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_cache, ((PyObject*)__pyx_t_2));
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_cache, ((PyObject*)__pyx_t_1));
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":18
+  /* "robot/pr2/pr2InvKin2.pyx":17
  * 
  * cdef dict cache = {}
  * def clearInvKinCache2():             # <<<<<<<<<<<<<<
  *     cache.clear()
  * 
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_5robot_3pr2_3ik2_1clearInvKinCache2, NULL, __pyx_n_s_robot_pr2_ik2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_clearInvKinCache2, __pyx_t_2) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5robot_3pr2_3ik2_1clearInvKinCache2, NULL, __pyx_n_s_robot_pr2_ik2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_clearInvKinCache2, __pyx_t_1) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":21
+  /* "robot/pr2/pr2InvKin2.pyx":20
  *     cache.clear()
  * 
  * invKinStats2 = [0, 0]             # <<<<<<<<<<<<<<
  * cdef double IK_FAST_STEP = 0.1
  * 
  */
-  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
-  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_int_0);
+  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_int_0);
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
-  PyList_SET_ITEM(__pyx_t_2, 1, __pyx_int_0);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_invKinStats2, __pyx_t_2) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  PyList_SET_ITEM(__pyx_t_1, 1, __pyx_int_0);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_invKinStats2, __pyx_t_1) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":22
+  /* "robot/pr2/pr2InvKin2.pyx":21
  * 
  * invKinStats2 = [0, 0]
  * cdef double IK_FAST_STEP = 0.1             # <<<<<<<<<<<<<<
@@ -6712,322 +6685,322 @@ PyMODINIT_FUNC PyInit_ik2(void)
  */
   __pyx_v_5robot_3pr2_3ik2_IK_FAST_STEP = 0.1;
 
-  /* "robot/pr2/pr2InvKin2.pyx":24
+  /* "robot/pr2/pr2InvKin2.pyx":23
  * cdef double IK_FAST_STEP = 0.1
  * 
  * def armInvKin2(chains, arm, torso, target, conf,             # <<<<<<<<<<<<<<
  *               returnAll = False):
  *     name = 'ArmInvKin'
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_5robot_3pr2_3ik2_3armInvKin2, NULL, __pyx_n_s_robot_pr2_ik2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 24, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_armInvKin2, __pyx_t_2) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_5robot_3pr2_3ik2_3armInvKin2, NULL, __pyx_n_s_robot_pr2_ik2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_armInvKin2, __pyx_t_1) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":48
+  /* "robot/pr2/pr2InvKin2.pyx":47
  *     return newArmAngles
  * 
  * nsolnsKin = 10             # <<<<<<<<<<<<<<
  * cdef numpy.ndarray rotKin, transKin, freeKin, solnsKin, jtKin
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_nsolnsKin, __pyx_int_10) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_nsolnsKin, __pyx_int_10) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
 
-  /* "robot/pr2/pr2InvKin2.pyx":50
+  /* "robot/pr2/pr2InvKin2.pyx":49
  * nsolnsKin = 10
  * cdef numpy.ndarray rotKin, transKin, freeKin, solnsKin, jtKin
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_9);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_double); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_double); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple__16, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple__16, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_4);
-  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_double); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_XGOTREF(((PyObject *)__pyx_v_5robot_3pr2_3ik2_rotKin));
-  __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_rotKin, ((PyArrayObject *)__pyx_t_1));
-  __Pyx_GIVEREF(__pyx_t_1);
-  __pyx_t_1 = 0;
+  __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_rotKin, ((PyArrayObject *)__pyx_t_2));
+  __Pyx_GIVEREF(__pyx_t_2);
+  __pyx_t_2 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":51
+  /* "robot/pr2/pr2InvKin2.pyx":50
  * cdef numpy.ndarray rotKin, transKin, freeKin, solnsKin, jtKin
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_double); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__17, __pyx_t_1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__17, __pyx_t_2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GIVEREF(__pyx_t_9);
-  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_9);
-  __pyx_t_9 = 0;
-  __pyx_t_9 = PyDict_New(); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_double); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_3) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GIVEREF(__pyx_t_9);
+  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_9);
+  __pyx_t_9 = 0;
+  __pyx_t_9 = PyDict_New(); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_9);
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_double); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_3) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_XGOTREF(((PyObject *)__pyx_v_5robot_3pr2_3ik2_transKin));
   __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_transKin, ((PyArrayObject *)__pyx_t_3));
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":52
+  /* "robot/pr2/pr2InvKin2.pyx":51
  * rotKin = numpy.ascontiguousarray(numpy.zeros(9, dtype=numpy.double), dtype=numpy.double)
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)
  */
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__18, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__18, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GIVEREF(__pyx_t_2);
-  PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
-  __pyx_t_2 = 0;
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __Pyx_GIVEREF(__pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
+  __pyx_t_1 = 0;
+  __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_double); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_double); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 52, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_XGOTREF(((PyObject *)__pyx_v_5robot_3pr2_3ik2_freeKin));
   __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_freeKin, ((PyArrayObject *)__pyx_t_4));
   __Pyx_GIVEREF(__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":53
+  /* "robot/pr2/pr2InvKin2.pyx":52
  * transKin = numpy.ascontiguousarray(numpy.zeros(3, dtype=numpy.double), dtype=numpy.double)
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)
  * 
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_nsolnsKin); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_nsolnsKin); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_9 = PyNumber_Multiply(__pyx_int_7, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_9 = PyNumber_Multiply(__pyx_int_7, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_9);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_9);
   __pyx_t_9 = 0;
-  __pyx_t_9 = PyDict_New(); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_9 = PyDict_New(); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = PyDict_New(); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_5 = PyDict_New(); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_double); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_3) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_3) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_9, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_9, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 53, __pyx_L1_error)
+  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_XGOTREF(((PyObject *)__pyx_v_5robot_3pr2_3ik2_solnsKin));
   __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_solnsKin, ((PyArrayObject *)__pyx_t_3));
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "robot/pr2/pr2InvKin2.pyx":54
+  /* "robot/pr2/pr2InvKin2.pyx":53
  * freeKin = numpy.ascontiguousarray(numpy.zeros(1, dtype=numpy.double), dtype=numpy.double)
  * solnsKin = numpy.ascontiguousarray(numpy.zeros(7*nsolnsKin, dtype=numpy.double), dtype=numpy.double)
  * jtKin = numpy.ascontiguousarray(numpy.zeros(7, dtype=numpy.double), dtype=numpy.double)             # <<<<<<<<<<<<<<
  * 
  * cdef inline double angleDiff(double x, double y):
  */
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_zeros); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_3 = PyDict_New(); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_double); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_double); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple__19, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_tuple__19, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_numpy); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_double); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_double); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 54, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_XGOTREF(((PyObject *)__pyx_v_5robot_3pr2_3ik2_jtKin));
-  __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_jtKin, ((PyArrayObject *)__pyx_t_2));
-  __Pyx_GIVEREF(__pyx_t_2);
-  __pyx_t_2 = 0;
+  __Pyx_DECREF_SET(__pyx_v_5robot_3pr2_3ik2_jtKin, ((PyArrayObject *)__pyx_t_1));
+  __Pyx_GIVEREF(__pyx_t_1);
+  __pyx_t_1 = 0;
 
   /* "robot/pr2/pr2InvKin2.pyx":1
  * import geometry.hu as hu             # <<<<<<<<<<<<<<
  * import math
  * import numpy
  */
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "../../../../../../opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/Cython/Includes/numpy/__init__.pxd":997
  *         raise ImportError("numpy.core.umath failed to import")

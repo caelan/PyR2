@@ -24,7 +24,6 @@ cdef class Thing:
     cpdef np.ndarray[np.int_t, ndim=2] edges(self)
     cpdef Thing applyTrans(self, hu.Transform trans, str frame=*)
     cpdef Thing applyLoc(self, hu.Transform trans, str frame=*)
-    cpdef draw(self, str window, str color = *, double opacity = *)
     # cpdef bool containsPt(self, np.ndarray[np.float64_t, ndim=1] pt)
     # cpdef Prim prim(self)
     # cpdef bool collides(self, Thing obj)
@@ -81,7 +80,6 @@ cdef class Prim:
     cpdef Prim xyPrim(self)
     cpdef Prim boundingRectPrim(self)
     cpdef tuple desc(self)
-    cpdef draw(self, str window, str color = *, double opacity = *)	
 
 cdef class Shape:
     cdef list shapeParts
@@ -109,7 +107,6 @@ cdef class Shape:
     cpdef Prim boundingRectPrim(self)
     cpdef list faceFrames(self)
     cpdef tuple desc(self)
-    cpdef draw(self, str window, str color = *, double opacity = *)
 
 cdef class Box(Prim):
     cdef nothing

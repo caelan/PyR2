@@ -10,8 +10,6 @@ import geometry.hu as hu
 from geometry.geom import vertsBBox, bboxCenter, bboxUnion, bboxOverlap, bboxGrownOverlap, bboxOrigin
 from geometry.cut import primPrimCut
 
-import graphics.windowManager3D as wm
-
 cimport geometry.collision as collision
 import geometry.collision as collision
 from geometry.collision import primPrimCollides
@@ -147,10 +145,6 @@ cdef class Thing:
 
     # cpdef Prim boundingRectPrim(self):
     #     return self.prim()
-
-    cpdef draw(self, str window, str color = 'black', double opacity = 1.0):
-        """Ask the window to draw this object."""
-        wm.getWindow(window).draw(self, color, opacity)
         
     def __str__(self):
         return self.properties['name']+':'+str(self.bbox().tolist())
@@ -390,10 +384,6 @@ cdef class Prim:
     cpdef Prim boundingRectPrim(self):
         return boundingRectPrimAux(self.vertices(), self.primOrigin, self.properties)
 
-    cpdef draw(self, str window, str color = 'black', double opacity = 1.0):
-        """Ask the window to draw this object."""
-        wm.getWindow(window).draw(self, color, self.properties.get('opacity', opacity))
-
     cpdef tuple desc(self):
         if not self.tupleBBox:
             self.bbox()                 # sets it
@@ -555,10 +545,6 @@ cdef class Shape:
         if not self.tupleBBox:
             self.bbox()                 # sets it
         return self.tupleBBox
-
-    cpdef draw(self, str window, str color = 'black', double opacity = 1.0):
-        """Ask the window to draw this object."""
-        wm.getWindow(window).draw(self, color, self.properties.get('opacity', opacity))
     
     def __str__(self):
         return self.properties['name']+':'+str(self.desc())

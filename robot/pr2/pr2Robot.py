@@ -1,24 +1,26 @@
 import math
-import geometry.hu as hu
-import geometry.transformations as transf
-import numpy as np
 from collections import deque
 
+import geometry.hu as hu
+import numpy as np
 import geometry.shapes as shapes
-from geometry.chains import compileChainFramesOS, Chain, MultiChain, getUrdfJoints, GripperChain, Planar, Rigid, Prismatic
 
+import geometry.transformations as transf
+from geometry.chains import compileChainFramesOS, Chain, MultiChain, getUrdfJoints, GripperChain, Planar, Rigid, Prismatic
 from robot.pr2.pr2IkPoses import ikTrans # base poses
 from robot.pr2.pr2IkMap import ikTransLRz  # (z, base pose)
 from robot.pr2.ik2 import armInvKin2, clearInvKinCache2
 
-# Don't reload these files anywhere else!
-import robot.conf
-import robot.genericRobot
-reload(robot.conf)
-reload(robot.genericRobot)
 
-from robot.conf import RobotJointConf, RobotCartConf
-from robot.genericRobot import GenericRobot
+
+# Don't reload these files anywhere else!
+import geometry.conf
+import geometry.genericRobot
+reload(geometry.conf)
+reload(geometry.genericRobot)
+
+from geometry.conf import RobotJointConf, RobotCartConf
+from geometry.genericRobot import GenericRobot
 
 Ident = hu.Transform(np.eye(4, dtype=np.float64)) # identity transform
 

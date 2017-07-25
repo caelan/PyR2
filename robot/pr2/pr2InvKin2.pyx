@@ -6,7 +6,6 @@ cimport numpy
 cimport ik2
 import ik2
 
-from autil.utils import prettyString
 from geometry.transformations import rotation_matrix
 
 # The nominal tool offset in ikFast

@@ -14,7 +14,6 @@ from geometry.hu cimport Transform, angleDiff, fixAnglePlusMinusPi
 from geometry.shapes cimport Shape
 from geometry.geom import bboxUnion, bboxOrigin, vertsBBox
 from geometry.gjk2 import confViolationsOS, OS_Array, printOSa
-import graphics.windowManager3D as wm
 
 cdef double PI2 = 2*math.pi
 cdef Transform Ident = Transform(np.eye(4))

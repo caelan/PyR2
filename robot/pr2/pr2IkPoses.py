@@ -1,6 +1,5 @@
 import math
 import geometry.hu as hu
-from geometry.ranges import realRange, angleRange
 import numpy as np
 
 ikNuggets = [
@@ -147,9 +146,7 @@ ikPoses = [[],                          # n = 0
 def setupNuggets(n=2):
     nuggets = [hu.Pose(*p) for p in ikPoses[n]]
     for r in ikNuggets:
-        ranges = [realRange(*r[0]), angleRange(*r[1]),
-                  realRange(*r[2]), angleRange(*r[3])]
-        nuggets.append(nugPose([r.middle() for r in ranges]))
+        nuggets.append(nugPose([np.mean(r[i]) for i in range(4)]))
     return nuggets
 
 def nugPose(coord):

@@ -7,13 +7,10 @@ from cython cimport boundscheck, wraparound
 
 from cpython.mem cimport PyMem_Malloc, PyMem_Realloc, PyMem_Free
 
-import geometry.objects2 as objects
-cimport geometry.objects2 as objects
 cimport geometry.chains as chains
 cimport geometry.shapes as shapes
 cimport geometry.c_gjk as c_gjk
 from geometry.c_gjk cimport Object_structure, gjk_distance
-cimport objects2
 cimport gjk2
 import gjk2
 

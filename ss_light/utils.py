@@ -130,7 +130,7 @@ def manip_from_pose_grasp(pose, grasp, robot, hand):
 def pose_from_manip_grasp(manip, grasp, robot, hand):
   return manip.compose(get_wrist_frame(grasp, robot, hand).inverse())
 
-BACKOFF = 0.1
+BACKOFF = 0.15
 PERP_BACKOFF = 0.05
 
 def approach_from_manip(manip_trans):

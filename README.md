@@ -1,12 +1,12 @@
-# amber
-A simple infrastructure for robot motion planning.
+# PyR2
+A simple Python robotics framework for a PR2 robot.
 
 # Build #
 
-The all cython files (.pyx) are built during the installation. If for some reason they need to be rebuilt (if you change a .pyx or .pxd) run the following command from /amber:
+Build the Cython files by running following command from /PyR2:
 
 ```
-python setup.py build_ext --inplace
+python setup.py
 ```
 
 When prompted for a .pyx you can enter the .pyx you wish to build, *clear* to clear all compiled files, or *all* to build all files.

@@ -61,10 +61,10 @@ def build_all():
     setup(
         name = "ik2",
         ext_modules=[
-        Extension("robot.pr2.ik2",
-                  sources=["./robot/pr2/pr2InvKin2.pyx",
-                           "./robot/pr2/IK/ikfastApr18Left.cpp",
-                           "./robot/pr2/IK/ikfastApr18Right.cpp"],
+        Extension("geometry.pr2.ik2",
+                  sources=["./geometry/pr2/pr2InvKin2.pyx",
+                           "./geometry/pr2/IK/ikfastApr18Left.cpp",
+                           "./geometry/pr2/IK/ikfastApr18Right.cpp"],
                   include_dirs = ['.', numpy.get_include()],
                   language="c++")],
         cmdclass={"build_ext": build_ext})

@@ -6,7 +6,7 @@ import numpy as np
 
 from geometry import hu
 from ss_light.utils import get_box_body
-from robot.pr2.pr2Robot import makeRobot, leftTuckAngles, leftStowAngles
+from geometry.pr2.pr2Robot import makeRobot
 
 BODY_PLACEMENT_Z_OFFSET = 1e-3
 TOP_HOLDING_LEFT_ARM = [0.67717021, -0.34313199, 1.2, -1.46688405, 1.24223229, -1.95442826, 2.22254125]

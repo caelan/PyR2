@@ -2,7 +2,7 @@ import time
 import numpy as np
 cimport numpy as np
 from cpython cimport bool
-import graphics.DrawingWindowStandalonePIL as dw
+import geometry.DrawingWindowStandalonePIL as dw
 import geometry.hu as hu
 
 cdef class Window3D:

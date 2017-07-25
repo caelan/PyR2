@@ -1,10 +1,11 @@
-
 import math
+import os
+
 import numpy as np
-from geometry.transformations import euler_matrix, euler_from_matrix, quaternion_from_matrix
 import geometry.hu as hu
 
-import os
+from geometry.transformations import euler_matrix, euler_from_matrix, quaternion_from_matrix
+
 curDir = os.path.dirname(os.path.abspath(__file__))
 ikPath = curDir + '/pr2IKData.py'
 
@@ -31,7 +32,7 @@ def writeIKData(robot, angleStep = math.pi/20.):
         f.close()
 
 def readIKData():
-    from robot.pr2.pr2IKData import rightArmIKData, leftArmIKData
+    from geometry.pr2.pr2IKData import rightArmIKData, leftArmIKData
     return {'right': rightArmIKData, 'left': leftArmIKData}
 
 def ikTransLR():

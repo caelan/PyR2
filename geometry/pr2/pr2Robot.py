@@ -7,11 +7,9 @@ import geometry.shapes as shapes
 
 import geometry.transformations as transf
 from geometry.chains import compileChainFramesOS, Chain, MultiChain, getUrdfJoints, GripperChain, Planar, Rigid, Prismatic
-from robot.pr2.pr2IkPoses import ikTrans # base poses
-from robot.pr2.pr2IkMap import ikTransLRz  # (z, base pose)
-from robot.pr2.ik2 import armInvKin2, clearInvKinCache2
-
-
+from geometry.pr2.pr2IkPoses import ikTrans # base poses
+from geometry.pr2.pr2IkMap import ikTransLRz  # (z, base pose)
+from geometry.pr2.ik2 import armInvKin2, clearInvKinCache2
 
 # Don't reload these files anywhere else!
 import geometry.conf

@@ -168,17 +168,6 @@ def get_collision_fn(placed=[], attached=None):
     return any(placed_robot.collides(body) for body in placed)
   return collision_fn
 
-# def draw_window_3d(window_3d, robot_conf, placements, attached=None):
-#   if not is_window_active(window_3d):
-#     return
-#   window_3d.clear()
-#   window_name = get_window_name(window_3d)
-#   robot_conf.draw(window_name, attached=attached, color='gold')
-#   #robot_conf.robot.draw(window_name) # Could also manually place the robot
-#   for placed in placements:
-#     placed.draw(window_name, color=get_color(placed))
-
-
 # TODO - Amber doesn't allow tuples for colors because of Cython
 
 ROBOT_COLOR = 'gold'

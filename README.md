@@ -8,6 +8,7 @@ PyR2 can be installed using the following commands.
 
 ```
 sudo apt-get install python-pip
+sudo apt-get install python-tk
 sudo pip install Cython
 git clone https://github.com/caelan/PyR2.git
 python setup.py build
